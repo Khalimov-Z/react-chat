@@ -32,7 +32,7 @@
 
 Примерный внешний вид чата должен быть таким:
 
-![](https://uc04a70f2d9f4fb33118f7f19391.previews.dropboxusercontent.com/p/thumb/ABI0vzi_J6zFNMLVuisJ1v0xUCAk1xEy9tYD1Ip1gJs5jbFfBRlElspokyQUvkvQabE5KKQtYmnnPUuCdBZtcdQeAdegcOwmOxbacenTInIRXkMAqghQsEQOLwAwcuVZHQVc9kAIEdTeUlRcnNxI42d-9_G4OTEg21xAnH-a4ZAts1xmcg1k8Mk8BAP78Uyp6mnCY720j15fMN9Tbarye3YA0VbWmz9KkdTtURVLaE1I6baM4NSB3oG6Q5kQXHSq2iQ8KOimr3YqOoOytq5E8mOpEJDS4NNDmq8zsIwA4RJQlKnAa9RX7-EHmXe58KoArYoH61Ut44lAZ6m6DrFlJ2WLpGE5_imPNikt8vpYblXymLfHaqXJkZugrH2b0W4M7TG4-f3d50IsDDlzrm7z_jdk/p.png)
+![](./img.png)
 
 ⚠️ Помни, что в данном релизе готовится только внешний вид чата, а не функционал.
 
