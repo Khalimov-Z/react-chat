@@ -1,6 +1,7 @@
 .main {
     padding: 0 35px;
     font-size: 18px;
+    width: 100%;
 }
 
 .main-contact {
@@ -26,7 +27,7 @@
     cursor: pointer;
 }
 
-.messages-block {
+.message-container {
     padding-top: 10px;
     margin-top: 40px;
 }
