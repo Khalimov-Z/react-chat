@@ -1,8 +1,16 @@
 import React from 'react';
+import styles from './main.module.css'
+import SendMessageForm from './SendMessageForm';
+import MessageContainer from './MessageContainer';
+import MessageHeader from './MessageHeader';
 
-function Main (props) {
+function Main () {
   return (
-    <div></div>
+    <div className={styles.main}>
+      <MessageHeader />
+      <MessageContainer />
+      <SendMessageForm />
+    </div>
   );
 }
 
