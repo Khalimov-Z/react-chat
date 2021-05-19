@@ -6,6 +6,16 @@ function Contacts() {
   return (
     <div className={styles.scroll}>
       <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
     </div>
   );
 }

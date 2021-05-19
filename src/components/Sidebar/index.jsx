@@ -5,7 +5,7 @@ import Contacts from './Contacts';
 
 function Sidebar () {
   return (
-    <div className={styles["contacts"]}>
+    <div className={styles.contacts}>
       <SearchContact />
       <Contacts />
     </div>
