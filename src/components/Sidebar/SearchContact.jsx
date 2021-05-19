@@ -11,7 +11,7 @@ function SearchContact() {
           </i>
         </div>
         <div className={styles["type"]}>
-          <input type="text" className={styles["typing"]} placeholder="Search Contact"/>
+          <input type="text" className={styles["typing"]} placeholder="Search Contacts"/>
         </div>
       </div>
     </div>
