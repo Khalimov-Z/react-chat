@@ -3,7 +3,7 @@ import styles from './sidebar.module.css';
 import SearchContact from './SearchContact';
 import Contacts from './Contacts';
 
-function Sidebar () {
+function Sidebar() {
   return (
     <div className={styles.contacts}>
       <SearchContact />
