@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts {
+  width: 25%;
+}
+
+.contact {
+  width: 80%;
+  padding: 20px 10px;
+  border-radius: 3px;
+  display: flex;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.dummy {
+  width: 90%;
+  margin: 10px auto;
+  box-shadow: 0 0 7px 1px rgba(135, 135, 135, 1);
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.search {
+  margin: auto 15px;
+  font-size: 16px;
+  color: #a6a6a6;
+}
+
+.type {
+  margin: auto 0;
+}
+
+.typing {
+  height: 30px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: black;
+}
+
+.avatar-user {
+  width: 50px;
+  height: 50px;
+}
+
+.avatar-name {
+  width: 100%;
+}
+
+.contact:hover {
+  box-shadow: 0 0 7px 1px rgba(135, 135, 135, 1);
+  transition: 0.3s;
+}
+
+.user-name {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.user {
+  display: flex;
+}
+
+.user-last-message {
+  margin: auto;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #a6a6a6;
+}
+
+.user-check {
+  font-size: 10px;
+  margin-top: 3px;
+  color: #a6a6a6;
+}
+
+.more {
+  margin-top: 12px;
+}
+
+.scroll {
+  overflow: auto;
+  height: 94vh;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0;
+}
+
+.title {
+  margin: auto;
+}

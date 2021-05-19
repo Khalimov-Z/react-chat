@@ -1,8 +1,14 @@
 import React from 'react';
+import styles from './sidebar.module.css';
+import SearchContact from './SearchContact';
+import Contacts from './Contacts';
 
-function Sidebar (props) {
+function Sidebar() {
   return (
-    <div></div>
+    <div className={styles.contacts}>
+      <SearchContact />
+      <Contacts />
+    </div>
   );
 }
 
