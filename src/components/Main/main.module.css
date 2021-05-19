@@ -1,7 +1,10 @@
 .main {
+    flex: 1;
     padding: 0 35px;
     font-size: 18px;
-    width: 50%;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
     color: #363636;
 }
 
@@ -11,10 +14,6 @@
     padding: 10px;
     border-bottom: 1px solid lightgray;
     background-color: white;
-    position: fixed;
-    top: 0;
-    left: 40px;
-    right: 40px;
 }
 .search-chat {
     color: darkgray;
@@ -38,8 +37,6 @@
     padding: 10px 10px 5px;
     color: white;
     margin-bottom: 10px;
-    position: absolute;
-    right: 40px;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 .sent-messages-text {
@@ -82,7 +79,6 @@
     background-color: white;
     display: flex;
     justify-content: space-between;
-    position: fixed;
     bottom: 0;
     left: 40px;
     right: 40px;
