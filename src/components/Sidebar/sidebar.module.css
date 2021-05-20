@@ -40,7 +40,7 @@ body {
   box-sizing: border-box;
 }
 
-.headblock {
+.head-block {
   display: flex;
   height: 40px;
   width: 350px;

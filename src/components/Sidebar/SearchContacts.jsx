@@ -4,7 +4,7 @@ import styles from './sidebar.module.css';
 function SearchContacts() {
   return (
     <div className={styles['sidebar-header']}>
-      <div className={styles.headblock}>
+      <div className={styles['head-block']}>
         <div className={styles.magnifier}>
           <i className="fas fa-search"> </i>
         </div>

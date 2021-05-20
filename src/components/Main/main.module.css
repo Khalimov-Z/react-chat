@@ -21,6 +21,7 @@
     cursor: pointer;
 }
 .contact-title {
+    font-weight: bold;
 }
 .chat-settings {
     color: darkgray;
@@ -32,7 +33,7 @@
 }
 
 .sent-messages {
-    background-color: slateblue;
+    background-color: #2b323a;
     color: white;
     margin-bottom: 10px;
     display: block;
@@ -46,7 +47,7 @@
 .sent-messages:before {
     content: '';
     border: 10px solid transparent;
-    border-left: 10px solid slateblue;
+    border-left: 10px solid #2b323a;
     position: absolute;
     right: -20px;
     top: 17px;
@@ -58,23 +59,27 @@
     font-size: 13px;
     text-align: right;
 }
-
+.data {
+    margin-right: 5px;
+}
 .received-messages {
     margin-bottom: 10px;
     display: flex;
 }
 .contact-avatar {
     border-radius: 100%;
+    font-weight: 700;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
     margin-right: 10px;
     width: 20px;
     height: 20px;
+    background-color: #3e444a;
     line-height: 20px;
     align-items: center;
     padding: 15px;
     text-align: center;
-    background-image: linear-gradient(slateblue, #9887d6);
+    /*background-image: linear-gradient(slateblue, #9887d6);*/
 }
 .received-message {
     background-color: #dedede;
@@ -114,7 +119,7 @@
 }
 .message-buttons {
     display: flex;
-    color: slateblue;
+    color: #2b323a;
 }
 .investments {
     margin-left: 40px;
