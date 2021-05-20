@@ -25,6 +25,7 @@ function MessageContainer (props) {
           13:09 ✔
         </div>
       </div>
+
     </div>
   );
 }

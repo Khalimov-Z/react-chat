@@ -1,11 +1,11 @@
-.infomation-bar{
+.information-bar{
     width: 330px;
     background-color: #f7f8f9;
     height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
 }
-.inner-infomation-bar{
+.inner-information-bar{
     width: 280px;
     padding: 50px 25px 0 25px;
 }
