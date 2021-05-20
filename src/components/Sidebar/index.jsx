@@ -1,33 +1,13 @@
 import React from 'react';
 import styles from './sidebar.module.css';
-import SearchContact from './SearchContact';
-import Contact from './Contact';
+import SearchContacts from './SearchContacts';
+import Contacts from './Contacts';
 
-function Sidebar () {
+function Sidebar() {
   return (
-    <div className={styles["contacts"]}>
-      <SearchContact />
-      <div className={styles["scroll"]}>
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-        <Contact />
-      </div>
+    <div className={styles.contacts}>
+      <SearchContacts />
+      <Contacts />
     </div>
   );
 }
