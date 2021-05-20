@@ -5,12 +5,14 @@ function MessageContainer (props) {
   return (
     <div className={styles['message-container']}>
       <div className={styles['received-messages']}>
-        <div className={styles['contact-avatar']}>
-          К
-        </div>
+        <div className={styles['contact-avatar']}>К</div>
         <div className={styles['received-message']}>
           <div className={styles['received-message-text']}>
             Hi!
+            werwerewrwer
+            werwerew
+            <br/>
+            vjgvjhjvjhjhvjhvjhvjhvjhv
           </div>
           <div className={styles['message-data']}>
             12:47
@@ -20,9 +22,15 @@ function MessageContainer (props) {
       <div className={styles['sent-messages']}>
         <div className={styles['sent-messages-text']}>
           Hello!
+          ffjhjhhjhgjhghgqwerewrwerwer
+          werwerewrwer
+          werwerew
+          <br/>
+          vjgvjhjvjhjhvjhvjhvjhvjhviih
         </div>
         <div className={styles['message-data']}>
-          13:09 ✔
+          <span className={styles.data}>13:09</span>
+          <i className="fas fa-check"> </i>
         </div>
       </div>
     </div>
