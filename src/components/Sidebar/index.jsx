@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './sidebar.module.css';
-import SearchContact from './SearchContact';
+import SearchContacts from './SearchContacts';
 import Contacts from './Contacts';
 
 function Sidebar() {
   return (
     <div className={styles.contacts}>
-      <SearchContact />
+      <SearchContacts />
       <Contacts />
     </div>
   );

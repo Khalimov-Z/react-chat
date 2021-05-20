@@ -16,6 +16,8 @@ function Contacts() {
       <Contact />
       <Contact />
       <Contact />
+      <Contact />
+      <Contact />
     </div>
   );
 }
