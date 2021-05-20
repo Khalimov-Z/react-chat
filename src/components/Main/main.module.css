@@ -4,7 +4,6 @@
     font-size: 18px;
     flex-direction: column;
     position:relative;
-    /*overflow-y: scroll;*/
     color: #363636;
     flex: 1;
 }
@@ -12,7 +11,8 @@
 .message-header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    font-size: 20px;
+    padding: 20px 10px;
     border-bottom: 1px solid lightgray;
     background-color: white;
 }
@@ -20,8 +20,17 @@
     color: darkgray;
     cursor: pointer;
 }
+.online {
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background-color: greenyellow;
+    align-self: center;
+    margin-left: 5px;
+}
 .contact-title {
     font-weight: bold;
+    display: flex;
 }
 .chat-settings {
     color: darkgray;
@@ -33,12 +42,11 @@
 }
 
 .sent-messages {
-    background-color: #2b323a;
+    background-color: #3e444a;
     color: white;
     margin-bottom: 10px;
     display: block;
     float: right;
-
     position: relative; /* !!! */
     padding: 10px 10px 5px;
     margin-right: 10px;
@@ -47,7 +55,7 @@
 .sent-messages:before {
     content: '';
     border: 10px solid transparent;
-    border-left: 10px solid #2b323a;
+    border-left: 10px solid #3e444a;
     position: absolute;
     right: -20px;
     top: 17px;
@@ -79,7 +87,6 @@
     align-items: center;
     padding: 15px;
     text-align: center;
-    /*background-image: linear-gradient(slateblue, #9887d6);*/
 }
 .received-message {
     background-color: #dedede;
@@ -109,7 +116,6 @@
     bottom: 0;
     position: fixed;
     color: darkgray;
-    margin: 0 auto;
 }
 .message-text {
     color: gray;

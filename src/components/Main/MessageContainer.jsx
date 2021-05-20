@@ -5,9 +5,7 @@ function MessageContainer (props) {
   return (
     <div className={styles['message-container']}>
       <div className={styles['received-messages']}>
-        <div className={styles['contact-avatar']}>
-          К
-        </div>
+        <div className={styles['contact-avatar']}>К</div>
         <div className={styles['received-message']}>
           <div className={styles['received-message-text']}>
             Hi!
