@@ -1,16 +1,25 @@
 .main {
-    width: 50%;
-    padding: 0 35px;
-    font-size: 18px;
-    flex-direction: column;
-    position:relative;
-    color: #363636;
     flex: 1;
 }
-
+.inner-main{
+    padding: 0 15px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    color: #363636;
+    height: 100vh;
+    justify-content: space-between;
+}
+.inner-main::-webkit-scrollbar {
+    width: 0;
+}
 .message-header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 11111111;
+    top: 0.1px;
     font-size: 20px;
     padding: 20px 10px;
     border-bottom: 1px solid lightgray;
@@ -19,6 +28,7 @@
 .search-chat {
     color: darkgray;
     cursor: pointer;
+    flex: 1;
 }
 .online {
     height: 8px;
@@ -31,6 +41,9 @@
 .contact-title {
     font-weight: bold;
     display: flex;
+    flex: 1;
+    margin-right: 80px;
+
 }
 .chat-settings {
     color: darkgray;
@@ -39,8 +52,12 @@
 
 .message-container {
     padding-top: 20px;
+    flex: 1;
 }
-
+.outer-sent-messages{
+  display: grid;
+    justify-content: end;
+}
 .sent-messages {
     background-color: #3e444a;
     color: white;
@@ -108,24 +125,28 @@
 }
 
 .message-form {
+    position: sticky;
+    bottom: 0.1px;
+}
+.inner-message-form{
     padding: 20px 0;
     border-top: 1px solid lightgray;
     background-color: white;
     display: flex;
-    justify-content: space-between;
-    bottom: 0;
-    position: fixed;
     color: darkgray;
+    justify-content: space-between;
 }
 .message-text {
     color: gray;
     outline: none !important;
     border: none;
     font-size: 15px;
+    flex: 1;
 }
 .message-buttons {
     display: flex;
     color: #2b323a;
+
 }
 .investments {
     margin-left: 40px;
@@ -139,3 +160,4 @@
     margin-left: 40px;
     cursor: pointer;
 }
+

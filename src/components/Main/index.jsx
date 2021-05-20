@@ -7,9 +7,11 @@ import MessageHeader from './MessageHeader';
 function Main () {
   return (
     <div className={styles.main}>
-      <MessageHeader />
-      <MessageContainer />
-      <SendMessageForm />
+      <div className={styles['inner-main']}>
+        <MessageHeader />
+        <MessageContainer />
+        <SendMessageForm />
+      </div>
     </div>
   );
 }
