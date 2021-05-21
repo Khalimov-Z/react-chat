@@ -1,8 +1,9 @@
 import React from 'react';
 import styles from './main.module.css'
-import SendMessageForm from './SendMessageForm';
-import MessageContainer from './MessageContainer';
 import MessageHeader from './MessageHeader';
+import MessageContainer from './MessageContainer';
+import SendMessageForm from './SendMessageForm';
+
 
 function Main () {
   return (
