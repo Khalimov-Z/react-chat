@@ -1,8 +1,9 @@
 .app {
   display: flex;
-  margin: auto;
-  max-width: 2000px;
+  margin: 0 auto;
+  max-width: 1920px;
 }
+
 html{
   font-family: 'Roboto', sans-serif;
 }

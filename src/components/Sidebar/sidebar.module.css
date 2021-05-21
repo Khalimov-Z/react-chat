@@ -4,13 +4,13 @@ body {
 }
 
 .contacts {
-  width: 25%;
+  width: 330px;
   background-color: #2b323a;
   height: 100vh;
 }
 
 .contact {
-  padding: 20px 0;
+  padding: 20px 15px 20px 0;
   display: flex;
   cursor: pointer;
   position: relative;
@@ -40,10 +40,11 @@ body {
   box-sizing: border-box;
 }
 
-.headblock {
+.head-block {
   display: flex;
   height: 40px;
-  width: 350px;
+  flex: 1;
+  width: 100%;
   margin: auto;
   background-color: #363d45;
   border-radius: 50px;
@@ -67,7 +68,8 @@ body {
   outline: none;
   border: none;
   height: 28px;
-  width: 290px;
+  width: 80%;
+  flex: 1;
   font-size: 18px;
   color: #e6e6e6;
 }
@@ -139,7 +141,7 @@ body {
 
 .user-more {
   color: white;
-  text-align: end;
+  text-align: center;
   cursor: pointer;
   transition: 0.2s;
   transform: translateY(20px);

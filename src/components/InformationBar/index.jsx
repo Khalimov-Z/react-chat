@@ -4,8 +4,8 @@ import InformationContact from './InformationContact';
 
 function InformationBar (props) {
   return (
-    <div className={styles["infomation-bar"]}>
-      <div className={styles["inner-infomation-bar"]}>
+    <div className={styles["information-bar"]}>
+      <div className={styles["inner-information-bar"]}>
         <InformationContact />
         <div className={styles["social-block"]}>
           <div className={styles.social}>Social</div>

@@ -1,0 +1,36 @@
+.received-messages {
+    margin-bottom: 10px;
+    display: flex;
+}
+.contact-avatar {
+    border-radius: 100%;
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #3e444a;
+    line-height: 20px;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+}
+.received-message {
+    background-color: #dedede;
+    position: relative; /* !!! */
+    padding: 10px 10px 5px;
+    margin-left: 9px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.received-message:before {
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #dedede;
+    position: absolute;
+    left: -20px;
+    top: 17px;
+}
+.received-message-text {
+    margin-right: 15px;
+}

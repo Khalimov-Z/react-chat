@@ -9,6 +9,7 @@ function MessageHeader (props) {
       </div>
       <div className={styles['contact-title']}>
         Кудузов Ахмад
+        <div className={styles.online}> </div>
       </div>
       <div className={styles['chat-settings']}>
         <i className="fas fa-cog">{''}</i>
