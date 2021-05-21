@@ -1,0 +1,8 @@
+.scroll {
+  overflow: auto;
+  height: 90vh;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0;
+}

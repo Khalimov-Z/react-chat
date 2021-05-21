@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './sidebar.module.css';
-import SearchContacts from './SearchContacts';
-import Contacts from './Contacts';
+import SearchContacts from './SearchContacts/SearchContacts';
+import Contacts from './Contacts/Contacts';
 
 function Sidebar() {
   return (

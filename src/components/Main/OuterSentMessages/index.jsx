@@ -6,12 +6,9 @@ function OuterSentMessages (props) {
     <div className={styles['outer-sent-messages']}>
       <div className={styles['sent-messages']}>
         <div className={styles['sent-messages-text']}>
-          Hello!
-          ffjhjhhjhgjhghgqwerewrwerwer
-          werwerewrwer
-          werwerew
+          Hi, I'm doing great, my day was also great.
           <br/>
-          vjgvjhjvjhjhvjhvjhvjhvjhviih
+          I wonder what happened to you???🤨
         </div>
         <div className={styles['message-data']}>
           <span className={styles.data}>13:09</span>
