@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './main.module.css';
+import styles from './message-buttons.module.css';
 
 function MessageButtons (props) {
   return (

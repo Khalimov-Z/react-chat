@@ -1,16 +1,25 @@
 .main {
-    width: 50%;
-    padding: 0 35px;
-    font-size: 18px;
-    flex-direction: column;
-    position:relative;
-    color: #363636;
     flex: 1;
 }
-
+.inner-main{
+    padding: 0 15px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    color: #363636;
+    height: 100vh;
+    justify-content: space-between;
+}
+.inner-main::-webkit-scrollbar {
+    width: 0;
+}
 .message-header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 11111111;
+    top: 1px;
     font-size: 20px;
     padding: 20px 10px;
     border-bottom: 1px solid lightgray;
@@ -19,6 +28,7 @@
 .search-chat {
     color: darkgray;
     cursor: pointer;
+    flex: 1;
 }
 .online {
     height: 8px;
@@ -31,6 +41,8 @@
 .contact-title {
     font-weight: bold;
     display: flex;
+    flex: 1;
+    margin-right: 80px;
 }
 .chat-settings {
     color: darkgray;
@@ -39,103 +51,27 @@
 
 .message-container {
     padding-top: 20px;
-}
-
-.sent-messages {
-    background-color: #3e444a;
-    color: white;
-    margin-bottom: 10px;
-    display: block;
-    float: right;
-    position: relative; /* !!! */
-    padding: 10px 10px 5px;
-    margin-right: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
-}
-.sent-messages:before {
-    content: '';
-    border: 10px solid transparent;
-    border-left: 10px solid #3e444a;
-    position: absolute;
-    right: -20px;
-    top: 17px;
-}
-.sent-messages-text {
-    margin-right: 15px;
-}
-.message-data {
-    font-size: 13px;
-    text-align: right;
-}
-.data {
-    margin-right: 5px;
-}
-.received-messages {
-    margin-bottom: 10px;
-    display: flex;
-}
-.contact-avatar {
-    border-radius: 100%;
-    font-weight: 700;
-    color: white;
-    font-size: 24px;
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    background-color: #3e444a;
-    line-height: 20px;
-    align-items: center;
-    padding: 15px;
-    text-align: center;
-}
-.received-message {
-    background-color: #dedede;
-    position: relative; /* !!! */
-    padding: 10px 10px 5px;
-    margin-left: 9px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-.received-message:before {
-    content: '';
-    border: 10px solid transparent;
-    border-right: 10px solid #dedede;
-    position: absolute;
-    left: -20px;
-    top: 17px;
-}
-.received-message-text {
-    margin-right: 15px;
+    flex: 1;
 }
 
 .message-form {
+    position: sticky;
+    bottom: 0.1px;
+}
+.inner-message-form{
     padding: 20px 0;
     border-top: 1px solid lightgray;
     background-color: white;
     display: flex;
-    justify-content: space-between;
-    bottom: 0;
-    position: fixed;
     color: darkgray;
+    justify-content: space-between;
 }
 .message-text {
     color: gray;
     outline: none !important;
     border: none;
     font-size: 15px;
+    flex: 1;
 }
-.message-buttons {
-    display: flex;
-    color: #2b323a;
-}
-.investments {
-    margin-left: 40px;
-    cursor: pointer;
-}
-.voice {
-    margin-left: 40px;
-    cursor: pointer;
-}
-.send-message {
-    margin-left: 40px;
-    cursor: pointer;
-}
+
+

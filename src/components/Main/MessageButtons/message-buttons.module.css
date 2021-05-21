@@ -1,0 +1,16 @@
+.message-buttons {
+    display: flex;
+    color: #2b323a;
+}
+.investments {
+    margin-left: 40px;
+    cursor: pointer;
+}
+.voice {
+    margin-left: 40px;
+    cursor: pointer;
+}
+.send-message {
+    margin-left: 40px;
+    cursor: pointer;
+}
