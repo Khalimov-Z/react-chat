@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './main.module.css';
+import styles from './message-header.module.css';
 
 function MessageHeader (props) {
   return (

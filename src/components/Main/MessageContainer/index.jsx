@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './main.module.css';
-import OuterSentMessages from './OuterSentMessages';
+import styles from './message-container.module.css';
 import ReceivedMessages from './ReceivedMessages';
+import OuterSentMessages from './OuterSentMessages';
 
 function MessageContainer (props) {
   return (

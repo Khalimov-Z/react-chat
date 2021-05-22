@@ -1,12 +1,14 @@
 .information-bar{
-    width: 17%;
+    width: 20%;
     background-color: #dedede;
     height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
 }
 .inner-information-bar{
-    padding: 50px 25px 0 25px;
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 .social-block{
     margin-bottom: 30px;
@@ -33,7 +35,6 @@
 }
 .user{
     margin-left:10px;
-
 }
 .media{
     margin-bottom: 20px;
