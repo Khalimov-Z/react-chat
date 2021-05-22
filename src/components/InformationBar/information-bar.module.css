@@ -1,5 +1,5 @@
 .information-bar{
-    width: 330px;
+    width: 20%;
     background-color: #dedede;
     height: 100vh;
     overflow: hidden;
@@ -7,7 +7,8 @@
 }
 .inner-information-bar{
     width: 280px;
-    padding: 50px 25px 0 25px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 .social-block{
     margin-bottom: 30px;
@@ -16,7 +17,6 @@
     margin-bottom: 20px;
 }
 .messengers{
-    border-radius: 5px;
     padding: 25px;
     box-sizing: border-box;
     background-color: #fff;
@@ -35,7 +35,6 @@
 }
 .user{
     margin-left:10px;
-
 }
 .media{
     margin-bottom: 20px;
