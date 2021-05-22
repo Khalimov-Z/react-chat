@@ -7,11 +7,9 @@ function ReceivedMessages (props) {
       <div className={styles['contact-avatar']}>К</div>
       <div className={styles['received-message']}>
         <div className={styles['received-message-text']}>
-          Hi!
-          werwerewrwer
-          werwerew
+          Hi, how are you, how was your day?
           <br/>
-          vjgvjhjvjhjhvjhvjhvjhvjhv
+          Today it was I will tell you you will not believe it!😳🤯
         </div>
         <div className={styles['message-data']}>
           12:47
