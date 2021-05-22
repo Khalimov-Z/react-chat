@@ -16,7 +16,7 @@
 }
 .message-header {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     position: sticky;
     z-index: 11111111;
     top: 1px;
@@ -28,7 +28,6 @@
 .search-chat {
     color: darkgray;
     cursor: pointer;
-    flex: 1;
 }
 .online {
     height: 8px;
@@ -41,8 +40,6 @@
 .contact-title {
     font-weight: bold;
     display: flex;
-    flex: 1;
-    margin-right: 80px;
 }
 .chat-settings {
     color: darkgray;
@@ -56,10 +53,9 @@
 
 .message-form {
     position: sticky;
-    bottom: 0.1px;
 }
 .inner-message-form{
-    padding: 20px 0;
+    padding: 20px 10px;
     border-top: 1px solid lightgray;
     background-color: white;
     display: flex;
