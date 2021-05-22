@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './main.module.css';
+import styles from './send-message-form.module.css'
 import MessageButtons from './MessageButtons';
 
 function SendMessageForm (props) {

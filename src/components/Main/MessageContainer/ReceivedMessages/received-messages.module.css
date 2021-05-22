@@ -34,3 +34,7 @@
 .received-message-text {
     margin-right: 15px;
 }
+.message-data {
+    font-size: 13px;
+    text-align: right;
+}
