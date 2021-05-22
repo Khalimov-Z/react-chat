@@ -9,13 +9,6 @@ body {
   height: 100vh;
 }
 
-.contact {
-  padding: 20px 15px 20px 0;
-  display: flex;
-  cursor: pointer;
-  position: relative;
-}
-
 .contact:before {
   content: '';
   position: absolute;
@@ -56,77 +49,4 @@ body {
   width: 10px;
   border-radius: 100%;
   background-color: greenyellow;
-}
-
-.user-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #3e444a;
-  margin-left: 25px;
-}
-
-.image {
-  color: white;
-  font-weight: 700;
-  font-size: 26px;
-  text-align: center;
-  width: 30px;
-  height: 30px;
-  box-sizing: border-box;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.user-head-title {
-  margin: auto 50px;
-}
-
-.user-title {
-  display: flex;
-}
-
-.user-last-message {
-  font-size: 14px;
-  color: #86898d;
-  cursor: initial;
-}
-
-.user-name {
-  font-size: 16px;
-  color: white;
-  cursor: text;
-}
-
-.user-check {
-  color: #86898d;
-  font-size: 10px;
-  margin-top: 2px;
-  margin-right: 3px;
-  cursor: text;
-}
-
-.user-menu {
-  margin: auto;
-}
-
-.user-more {
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.2s;
-  transform: translateY(20px);
-  opacity: 0;
-}
-
-.contact:hover .user-more {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.user-last-time {
-  font-size: 13px;
-  color: #86898d;
-  cursor: text;
 }
