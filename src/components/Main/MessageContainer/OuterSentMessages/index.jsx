@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import styles from './outer-sent-messages.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { receivingMessages } from '../../../redux/ducks/messages';
+import { receivingMessages } from '../../../../redux/ducks/messages';
+
 
 function OuterSentMessages () {
   const dispatch = useDispatch();
