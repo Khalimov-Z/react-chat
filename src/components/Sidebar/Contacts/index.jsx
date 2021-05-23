@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styles from './Contacts.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { loadContacts } from '../../../redux/ducks/contacts';
-import Contact from './Contact/Contact';
+import Contact from './Contact';
 
 
 function Contacts() {
