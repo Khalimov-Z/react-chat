@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './sidebar.module.css';
+import styles from './SearchContacts.module.css';
 
 function SearchContacts() {
   return (

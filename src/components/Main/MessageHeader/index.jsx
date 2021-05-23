@@ -8,7 +8,7 @@ function MessageHeader (props) {
         <i className="fas fa-search">{''}</i>
       </div>
       <div className={styles['contact-title']}>
-        Кудузов Ахмад
+        Name Surname
         <div className={styles.online}> </div>
       </div>
       <div className={styles['chat-settings']}>

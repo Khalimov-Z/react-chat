@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
-import styles from './sidebar.module.css';
-import Contact from './Contact';
+import styles from './Contacts.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { loadContacts } from '../../redux/ducks/contacts';
+import { loadContacts } from '../../../redux/ducks/contacts';
+import Contact from './Contact/Contact';
+
 
 function Contacts() {
   const contacts = useSelector((state) => state.contacts.contacts);
