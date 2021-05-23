@@ -1,5 +1,7 @@
 .message-form {
     position: sticky;
+    z-index: 11111111;
+    bottom: 0.1px;
 }
 .inner-message-form{
     padding: 20px 10px;
