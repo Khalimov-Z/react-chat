@@ -1,18 +1,13 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './Contacts.module.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { loadContacts } from '../../../redux/ducks/contacts';
+import { useSelector } from 'react-redux';
 import Contact from './Contact/Contact';
 
 
 function Contacts() {
   const contacts = useSelector((state) => state.contacts.contacts);
+  // const loading =useSelector(state => state.contacts.loading)
 
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(loadContacts())
-  }, [dispatch]);
 
   return (
     <div className={styles.scroll}>

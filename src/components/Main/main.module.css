@@ -17,6 +17,21 @@
     width: 0;
 }
 
+.preloader{
+    flex: 3;
+    display: flex;
+    font-size: 24px;
+}
+
+.preloader div{
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin: auto;
+}
+
+
 
 
 
