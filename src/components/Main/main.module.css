@@ -31,6 +31,17 @@
     margin: auto;
 }
 
+.last-message {
+    background-color: #86898d;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    width: 10%;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
 
 
 

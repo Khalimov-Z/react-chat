@@ -6,7 +6,6 @@ import SendMessageForm from './SendMessageForm';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { receivingMessages } from '../../redux/ducks/messages';
-import {Redirect} from 'react-router-dom'
 
 function Main () {
 
@@ -37,6 +36,9 @@ function Main () {
       <div className={styles['inner-main']}>
         <MessageHeader />
         <MessageContainer />
+          <div className={styles['last-message']} id='footer'>
+            Last message
+          </div>
         <SendMessageForm />
       </div>
     </div>
