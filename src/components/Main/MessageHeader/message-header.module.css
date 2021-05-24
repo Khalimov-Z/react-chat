@@ -1,35 +1,35 @@
 .message-header {
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    z-index: 11111111;
-    top: 0.1px;
-    font-size: 20px;
-    padding: 20px 10px;
-    border-bottom: 1px solid lightgray;
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 11111111;
+  top: 0.1px;
+  font-size: 20px;
+  padding: 20px 10px;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
 }
 
 .search-chat {
-    color: darkgray;
-    cursor: pointer;
+  color: darkgray;
+  cursor: pointer;
 }
 
 .contact-title {
-    font-weight: bold;
-    display: flex;
+  font-weight: bold;
+  display: flex;
 }
 
 .chat-settings {
-    color: darkgray;
-    cursor: pointer;
+  color: darkgray;
+  cursor: pointer;
 }
 
 .online {
-    height: 8px;
-    width: 8px;
-    border-radius: 100%;
-    background-color: greenyellow;
-    align-self: center;
-    margin-left: 5px;
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: greenyellow;
+  align-self: center;
+  margin-left: 5px;
 }

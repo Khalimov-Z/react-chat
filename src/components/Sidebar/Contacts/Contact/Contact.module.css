@@ -94,3 +94,22 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+.contact:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-top: solid 1px #3e444a;
+  border-bottom: solid 1px #3e444a;
+  transition: 0.2s;
+  transform: scaleX(0);
+  cursor: auto;
+}
+
+.contact:hover:before {
+  transform: scale(1);
+  cursor: pointer;
+}
