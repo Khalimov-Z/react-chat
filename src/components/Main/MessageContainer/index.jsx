@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import Message from './Message';
 
 function MessageContainer (props) {
-  const messages = useSelector(state => state.messages.items);
+  const messages = useSelector(state => state.messages.messages);
   const loading = useSelector((state) => state.messages.loading);
 
   if (loading) {
