@@ -3,8 +3,8 @@ import styles from './message-container.module.css';
 import { useSelector } from 'react-redux';
 import Message from './Message';
 
-function MessageContainer(props) {
-  const messages = useSelector((state) => state.messages.messages);
+function MessageContainer (props) {
+  const messages = useSelector(state => state.messages.messages);
   const loading = useSelector((state) => state.messages.loading);
 
   if (loading) {

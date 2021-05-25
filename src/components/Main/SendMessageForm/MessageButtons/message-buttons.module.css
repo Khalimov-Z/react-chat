@@ -14,11 +14,10 @@
   margin-left: 30px;
 }
 
-button {
+.btn-add {
   cursor: pointer;
   border: none;
   background-color: white;
   font-size: 18px;
-  padding-bottom: 5px;
   color: #2b323a;
 }

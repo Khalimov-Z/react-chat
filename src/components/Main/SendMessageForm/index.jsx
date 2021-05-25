@@ -13,12 +13,12 @@ function SendMessageForm(props) {
 
   const dispatch = useDispatch();
 
-  const handleAddMessage = () => {
-    dispatch(addMessage(profileId, contactId, newMessage));
-  };
-
   const handleText = (e) => {
     dispatch(changeText(e.target.value));
+  };
+
+  const handleAddMessage = () => {
+    dispatch(addMessage(profileId, contactId, newMessage));
   };
 
   return (
@@ -33,7 +33,7 @@ function SendMessageForm(props) {
             onChange={handleText}
           />
         </form>
-        <MessageButtons handleAddMessage={handleAddMessage} />
+        <MessageButtons handleAddMessage={handleAddMessage} newMessage={newMessage} />
       </div>
     </div>
   );

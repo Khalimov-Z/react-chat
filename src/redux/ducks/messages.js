@@ -28,18 +28,13 @@ export default function messages(state = initialState, action) {
     case ADD_MESSAGE_START:
       return {
         ...state,
-        loading: true,
       };
 
     case ADD_MESSAGE_SUCCESS:
       return {
         ...state,
-        loading: false,
+        messages: [...state.messages, action.payload],
         newMessage: '',
-        messages: [
-          ...state.messages,
-          action.payload,
-        ]
       };
 
     default:
@@ -77,27 +72,26 @@ export const changeText = (e) => {
   };
 };
 
-export const addMessage = (myId, id, newMessage) => {
-  return (dispatch, getState) => {
-    // const { newMessage } = getState().messages;
+export const addMessage = (myId, contactId, content) => {
+  return (dispatch) => {
     dispatch({ type: ADD_MESSAGE_START });
 
-    fetch("https://api.intocode.ru:8001/api/messages", {
+    fetch('https://api.intocode.ru:8001/api/messages', {
       method: 'POST',
       headers: {
-        'Accept': 'application/json',
+        Accept: 'application/json',
         'Content-type': 'application/json',
       },
       body: JSON.stringify({
         myId,
-        id,
-        newMessage,
+        contactId,
+        content,
         type: 'text',
       }),
     })
       .then((response) => response.json())
       .then((json) => {
-        dispatch({ type: ADD_MESSAGE_SUCCESS, payload: json});
+        dispatch({ type: ADD_MESSAGE_SUCCESS, payload: json });
       });
   };
 };
