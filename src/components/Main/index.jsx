@@ -36,9 +36,6 @@ function Main () {
       <div className={styles['inner-main']}>
         <MessageHeader />
         <MessageContainer />
-          <div className={styles['last-message']} id='footer'>
-            Last message
-          </div>
         <SendMessageForm />
       </div>
     </div>

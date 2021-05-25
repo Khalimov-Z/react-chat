@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './message-buttons.module.css';
+import ScrollIntoView from 'react-scroll-into-view';
 
 function MessageButtons(props) {
   return (
@@ -13,11 +14,13 @@ function MessageButtons(props) {
             <i className="fas fa-microphone" />
           </div>
         ) && (
-          <div className={styles['send-message']}>
-            <button onClick={props.handleAddMessage}>
-              <i className="fas fa-paper-plane" />
-            </button>
-          </div>
+          <ScrollIntoView selector="#footer">
+            <div className={styles['send-message']} id={'scroll'}>
+              <button onClick={props.handleAddMessage}>
+                <i className="fas fa-paper-plane" />
+              </button>
+            </div>
+          </ScrollIntoView>
         )}
       </div>
     </div>
