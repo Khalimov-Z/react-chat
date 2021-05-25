@@ -22,14 +22,14 @@ export default function contacts(state = initialState, action) {
   }
 }
 
-const PROFILE_LOAD_START = "profile/load/start";
-const PROFILE_LOAD_SUCCESS ="profile/load/success";
+const PROFILE_LOAD_START = 'profile/load/start';
+const PROFILE_LOAD_SUCCESS = 'profile/load/success';
 
 export function loadProfile() {
   return (dispatch) => {
     dispatch({ type: PROFILE_LOAD_START });
 
-    fetch("https://api.intocode.ru:8001/api/profile")
+    fetch('https://api.intocode.ru:8001/api/profile')
       .then((response) => response.json())
       .then((json) => {
         dispatch({

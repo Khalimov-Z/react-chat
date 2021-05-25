@@ -1,8 +1,5 @@
 const initialState = {
   contacts: [],
-  lastMessage: {
-    content: '',
-  },
   loading: false,
 };
 

@@ -1,39 +1,32 @@
 .main {
-    flex: 1;
+  flex: 1;
 }
 
-.inner-main{
-    padding: 0 15px;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    color: #363636;
-    height: 100vh;
-    justify-content: space-between;
+.inner-main {
+  padding: 0 15px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  color: #363636;
+  height: 100vh;
+  justify-content: space-between;
 }
 
 .inner-main::-webkit-scrollbar {
-    width: 0;
+  width: 0;
 }
 
-.preloader{
-    flex: 3;
-    display: flex;
-    font-size: 24px;
+.preloader {
+  flex: 3;
+  display: flex;
+  font-size: 24px;
 }
 
-.preloader div{
-    background-color: whitesmoke;
-    padding: 10px;
-    border-radius: 20px;
-    font-weight: 600;
-    margin: auto;
+.preloader div {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin: auto;
 }
-
-
-
-
-
-
-

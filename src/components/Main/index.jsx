@@ -1,15 +1,13 @@
 import React, { useEffect } from 'react';
-import styles from './main.module.css'
+import styles from './main.module.css';
 import MessageHeader from './MessageHeader';
 import MessageContainer from './MessageContainer';
 import SendMessageForm from './SendMessageForm';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { receivingMessages } from '../../redux/ducks/messages';
-import {Redirect} from 'react-router-dom'
 
-function Main () {
-
+function Main() {
   const profileId = useSelector((state) => state.application._id);
   const loading = useSelector((state) => state.application.loading);
 
@@ -17,21 +15,23 @@ function Main () {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (contactId  && !loading){
-      dispatch(receivingMessages(contactId,profileId));
+    if (contactId && !loading) {
+      dispatch(receivingMessages(contactId, profileId));
     }
-  }, [dispatch,contactId,loading,profileId])
-  if (!contactId ) {
+  }, [dispatch, contactId, loading, profileId]);
+
+  if (!contactId) {
     return (
       <div className={styles.preloader}>
         <div>Please, select a chat to start messaging</div>
       </div>
-    )
+    );
   }
 
   if (loading) {
     return null;
   }
+
   return (
     <div className={styles.main}>
       <div className={styles['inner-main']}>

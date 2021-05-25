@@ -15,7 +15,7 @@ function MessageContainer (props) {
     <div className={styles['message-container']}>
       {messages.map((message) => (
         <div key={message._id}>
-          <Message message={message}  />
+          <Message message={message} key={message._id} />
         </div>
       ))}
     </div>
@@ -23,5 +23,3 @@ function MessageContainer (props) {
 }
 
 export default MessageContainer;
-//
-// <OuterSentMessage messages={messages} />

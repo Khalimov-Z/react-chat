@@ -1,60 +1,60 @@
-.information-bar{
-    width: 20%;
-    background-color: #dedede;
-    height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
+.information-bar {
+  width: 20%;
+  background-color: #dedede;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
 }
-.inner-information-bar{
-    width: 280px;
-    margin: 0 auto;
-    margin-top: 50px;
+.inner-information-bar {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
-.social-block{
-    margin-bottom: 30px;
+.social-block {
+  margin-bottom: 30px;
 }
-.social{
-    margin-bottom: 20px;
+.social {
+  margin-bottom: 20px;
 }
-.messengers{
-    padding: 25px;
-    box-sizing: border-box;
-    background-color: #fff;
-    box-shadow: 0 -0.1px 5px rgba(194, 191, 191, 0.226);
-    display: flex;
-    flex-direction: column;
+.messengers {
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 -0.1px 5px rgba(194, 191, 191, 0.226);
+  display: flex;
+  flex-direction: column;
 }
 .instagram,
 .twitter,
 .facebook {
-    cursor: pointer;
+  cursor: pointer;
 }
 .instagram,
 .twitter {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-.user{
-    margin-left:10px;
+.user {
+  margin-left: 10px;
 }
-.media{
-    margin-bottom: 20px;
+.media {
+  margin-bottom: 20px;
 }
-.media-rod{
-    background-color: #fff;
-    box-shadow: 0 -0.1px 5px rgba(194, 191, 191, 0.226);
-    display: flex;
-    padding: 15px;
-    align-items: center;
+.media-rod {
+  background-color: #fff;
+  box-shadow: 0 -0.1px 5px rgba(194, 191, 191, 0.226);
+  display: flex;
+  padding: 15px;
+  align-items: center;
 }
-.file{
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: #2b323a;
+.file {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #2b323a;
 }
-.text{
-    margin-left:10px;
+.text {
+  margin-left: 10px;
 }
-.user-facebook{
-    margin-left: 15px;
+.user-facebook {
+  margin-left: 15px;
 }
