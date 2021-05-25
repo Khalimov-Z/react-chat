@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Contact.module.css';
 import { NavLink } from 'react-router-dom';
+import styles from './contact.module.css';
 
 function Contact(props) {
   return (

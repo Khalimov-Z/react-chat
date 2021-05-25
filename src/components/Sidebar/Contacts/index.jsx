@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Contacts.module.css';
 import Contact from './Contact';
 import { useSelector } from 'react-redux';
+import styles from './contacts.module.css';
 
 function Contacts() {
   const contacts = useSelector((state) => state.contacts.contacts);
