@@ -3,12 +3,12 @@
   color: #2b323a;
 }
 .investments {
-  margin-left: 40px;
   cursor: pointer;
 }
 .voice {
-  margin-left: 40px;
+  margin-left: 46.25px;
   cursor: pointer;
+  padding-top: 1px;
 }
 .send-message {
   margin-left: 30px;
