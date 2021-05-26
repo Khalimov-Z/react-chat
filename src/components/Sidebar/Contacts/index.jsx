@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Contacts.module.css';
 import { useSelector } from 'react-redux';
-import Contact from './Contact/Contact';
 import ScrollIntoView from 'react-scroll-into-view';
+import styles from './contacts.module.css';
+import Contact from './Contact';
 
 
 function Contacts() {

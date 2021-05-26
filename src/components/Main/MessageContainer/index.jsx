@@ -3,7 +3,7 @@ import styles from './message-container.module.css';
 import { useSelector } from 'react-redux';
 import Message from './Message';
 
-function MessageContainer (props) {
+function MessageContainer () {
   const messages = useSelector(state => state.messages.messages);
   const loading = useSelector((state) => state.messages.loading);
 
@@ -20,8 +20,8 @@ function MessageContainer (props) {
           </div>
         ))}
       </div>
-      <div className={styles['last-message']} id='footer'>
-      </div>
+        <div className={styles['last-message']} id='footer'>
+        </div>
     </div>
   );
 }
