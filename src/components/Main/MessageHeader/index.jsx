@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './message-header.module.css';
 import SearchMessage from './SearchMessage';
 import FullnameContact from './FullnameContact';
@@ -10,7 +10,7 @@ function MessageHeader(props) {
     <div className={styles['message-header']}>
       <SearchMessage />
       <FullnameContact />
-      <ChatSetting />
+      <ChatSetting setIsShow={props.setIsShow} isShow={props.isShow}/>
     </div>
   );
 }
