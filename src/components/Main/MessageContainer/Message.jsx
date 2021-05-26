@@ -3,12 +3,12 @@ import { useSelector } from 'react-redux';
 import ReceivedMessage from './ReceivedMessage';
 import OuterSentMessage from './OuterSentMessage';
 
-function Message (props) {
-  // console.log(props.message.toUserId)
+function Message(props) {
   const profileId = useSelector((state) => state.application._id);
+
   if (profileId === props.message.toUserId) {
     return <ReceivedMessage message={props.message} />;
-  }else {
+  } else {
     return <OuterSentMessage message={props.message} />;
   }
 }
