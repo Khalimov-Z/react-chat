@@ -16,14 +16,20 @@ function MessageContainer (props) {
   }
 
   return (
-    <div className={styles['message-container']}>
-      {messages.map((message) => (
-        <div key={message._id}>
-          <Message message={message} key={message._id} />
+    <div>
+      <div className={styles['message-container']} id={'asd'}>
+        {messages.map((message) => (
+          <div key={message._id}>
+            <Message message={message}  />
+          </div>
+        ))}
+      </div>
+        <div className={styles['last-message']} id='footer'>
         </div>
-      ))}
     </div>
   );
 }
 
 export default MessageContainer;
+//
+// <OuterSentMessage messages={messages} />

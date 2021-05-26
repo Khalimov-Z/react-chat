@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import InformationBar from '../InformationBar';
 import Sidebar from '../Sidebar';
 import Main from '../Main';
@@ -10,6 +10,7 @@ import { loadContacts } from '../../redux/ducks/contacts';
 
 function App() {
   const dispatch = useDispatch();
+  const [isShow, setIsShow] = useState(false);
 
   useEffect(() => {
     dispatch(loadContacts());
@@ -21,8 +22,8 @@ function App() {
       <Switch>
         <Route path="/:id?">
           <Sidebar />
-          <Main />
-          <InformationBar />
+          <Main setIsShow={setIsShow} isShow={isShow}/>
+          {isShow && <InformationBar isShow={isShow}/>}
         </Route>
       </Switch>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import styles from './message-header.module.css';
 import SearchMessage from './SearchMessage';
 import FullnameContact from './FullnameContact';
