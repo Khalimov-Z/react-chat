@@ -9,27 +9,3 @@
   border-bottom: 1px solid lightgray;
   background-color: white;
 }
-
-.search-chat {
-  color: darkgray;
-  cursor: pointer;
-}
-
-.contact-title {
-  font-weight: bold;
-  display: flex;
-}
-
-.chat-settings {
-  color: darkgray;
-  cursor: pointer;
-}
-
-.online {
-  height: 8px;
-  width: 8px;
-  border-radius: 100%;
-  background-color: greenyellow;
-  align-self: center;
-  margin-left: 5px;
-}
