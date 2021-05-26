@@ -12,7 +12,7 @@
   padding: 15px 15px 10px;
   margin-right: 10px;
   margin-left: 300px;
-  word-break: break-all;
+  word-break:break-all ;
 }
 .sent-messages:before {
   content: '';
