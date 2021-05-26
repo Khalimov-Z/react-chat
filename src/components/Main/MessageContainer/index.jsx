@@ -4,7 +4,11 @@ import { useSelector } from 'react-redux';
 import Message from './Message';
 
 function MessageContainer (props) {
-  const messages = useSelector(state => state.messages.messages);
+  const presetText = useSelector((state) => state.messages.searchWord);
+  const messages = useSelector((state) => state.messages.messages.filter(
+    message => message.content.toLowerCase().indexOf(presetText.toLowerCase()) !== -1
+    ));
+
   const loading = useSelector((state) => state.messages.loading);
 
   if (loading) {

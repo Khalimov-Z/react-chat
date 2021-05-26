@@ -1,0 +1,22 @@
+.search-message {
+    color: darkgray;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.fa-search{
+    position: relative;
+    margin-left: 10px;
+}
+.input-message{
+    border: none;
+    font-size: 18px;
+    padding: 3px;
+    margin-left: 5px;
+}
+.close-word{
+    margin-left:5px;
+    color: red;
+    font-size: 21px;
+}
