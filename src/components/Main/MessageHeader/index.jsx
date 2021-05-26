@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styles from './message-header.module.css';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -10,8 +11,6 @@ function MessageHeader(props) {
     state.contacts.contacts.find((contact) => contact._id === paramsId),
   );
 
-  const toggleInformationBar = () => props.setIsShow(!props.isShow);
-
   return (
     <div className={styles['message-header']}>
       <div className={styles['search-chat']}>
@@ -21,7 +20,7 @@ function MessageHeader(props) {
         {userdata?.fullname}
         {userdata?.online && <div className={styles.online}> </div>}
       </div>
-      <div className={styles['chat-settings']} onClick={toggleInformationBar}>
+      <div className={styles['chat-settings']} onClick={() => props.setIsShow(!props.isShow)}>
         <i className="fas fa-cog">{''}</i>
       </div>
     </div>
