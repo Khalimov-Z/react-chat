@@ -2,7 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import styles from './fullname-contact.module.css';
-function FullnameContact (props) {
+
+function FullNameContact (props) {
   //const loading = useSelector((state) => state.messages.loading);
 
   const paramsId = useParams().id;
@@ -20,4 +21,4 @@ function FullnameContact (props) {
   );
 }
 
-export default FullnameContact;
+export default FullNameContact;

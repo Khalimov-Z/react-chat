@@ -3,10 +3,14 @@
 }
 
 .contact {
-  padding: 20px 15px 20px 0;
+  padding: 15px 15px 15px 0;
   display: flex;
   cursor: pointer;
   position: relative;
+}
+
+.selected {
+  /*background: #363d45;*/
 }
 
 .user-image {

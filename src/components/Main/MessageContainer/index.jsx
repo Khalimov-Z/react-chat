@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './message-container.module.css';
 import { useSelector } from 'react-redux';
 import Message from './Message';
-import { Link, animateScroll as scroll } from "react-scroll";
 
 function MessageContainer (props) {
   const presetText = useSelector((state) => state.messages.searchWord);

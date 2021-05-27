@@ -4,9 +4,9 @@ import styles from './contact.module.css';
 
 function Contact(props) {
   return (
-    <div>
+    <div className={styles.selected}>
       <NavLink
-        to={`/${props.contact._id}`}
+        to={`/${props.contact?._id}`}
         activeClassName={styles['contact-active']}
       >
         <div className={styles.contact}>
@@ -15,23 +15,23 @@ function Contact(props) {
               <div className={styles['user-image']}>
                 <div
                   className={
-                    props.contact.online ? styles.online : styles.offline
+                    props.contact?.online ? styles.online : styles.offline
                   }
                 >
                   {' '}
                 </div>
                 <div className={styles.image}>
-                  {props.contact.fullname.charAt(0)}
+                  {props.contact?.fullname.charAt(0)}
                 </div>
               </div>
             </div>
             <div className={styles['user-head-title']}>
               <div className={styles['user-name']}>
-                {props.contact.fullname}
+                {props.contact?.fullname}
               </div>
               <div className={styles['user-title']}>
                 <div className={styles['user-last-message']}>
-                  {props.contact.lastMessage?.content}
+                  {props.contact?.lastMessage?.content}
                 </div>
               </div>
             </div>
@@ -41,8 +41,8 @@ function Contact(props) {
               <i className="fas fa-ellipsis-h"> </i>
             </div>
             <div className={styles['user-last-time']}>
-              {props.contact.lastMessage?.time ? (
-                new Date(props.contact.lastMessage?.time)
+              {props.contact?.lastMessage?.time ? (
+                new Date(props.contact?.lastMessage?.time)
                   .toLocaleTimeString()
                   .slice(0, -3)
               ) : (

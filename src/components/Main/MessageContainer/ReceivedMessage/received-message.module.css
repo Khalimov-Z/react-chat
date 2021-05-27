@@ -2,6 +2,7 @@
   margin-bottom: 10px;
   display: flex;
 }
+
 .contact-avatar {
   border-radius: 100%;
   font-weight: 700;
@@ -16,6 +17,7 @@
   padding: 15px;
   text-align: center;
 }
+
 .received-message {
   background-color: #dedede;
   position: relative;
@@ -25,6 +27,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   word-break:break-all ;
 }
+
 .received-message:before {
   content: '';
   border: 10px solid transparent;
@@ -33,9 +36,11 @@
   left: -20px;
   top: 17px;
 }
+
 .received-message-text {
   margin-right: 15px;
 }
+
 .message-data {
   font-size: 13px;
   text-align: right;
