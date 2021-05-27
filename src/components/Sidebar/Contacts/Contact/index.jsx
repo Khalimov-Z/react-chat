@@ -4,7 +4,7 @@ import styles from './contact.module.css';
 
 function Contact(props) {
   return (
-    <div>
+    <div className={styles.selected}>
       <NavLink
         to={`/${props.contact?._id}`}
         activeClassName={styles['contact-active']}
