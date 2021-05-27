@@ -1,34 +1,39 @@
 .information-contact {
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 50px;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
 }
+
 .nickname {
-    color: #7a7b7b;
-    margin-bottom: 10px;
-    cursor: pointer;
+  color: #7a7b7b;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
+
 .username {
-    font-weight: 500;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 20px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 20px;
 }
+
 .avatar {
-    margin: auto;
-    width: 75px;
-    height: 75px;
-    line-height: 75px;
-    text-align: center;
-    border-radius: 100%;
-    background: linear-gradient(#4f595f, #252a32);
-    color: #fff;
-    font-size: 35px;
+  margin: auto;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  border-radius: 100%;
+  background: linear-gradient(#4f595f, #252a32);
+  color: #fff;
+  font-size: 35px;
 }
-.icon{
-    margin-left: 25px;
-    cursor: pointer;
+
+.icon {
+  margin-left: 25px;
+  cursor: pointer;
 }
-.icons{
-    margin-right: 25px;
+
+.icons {
+  margin-right: 25px;
 }
