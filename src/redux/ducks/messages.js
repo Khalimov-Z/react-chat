@@ -74,6 +74,7 @@ export const receivingMessages = (id, myId) => {
           type: MESSAGES_LOAD_SUCCESS,
           payload: json,
         });
+        document.getElementById('footer').scrollIntoView({ block: 'end' });
       });
   };
 };
