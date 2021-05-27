@@ -14,14 +14,23 @@ function MessageHeader(props) {
   return (
     <div className={styles['message-header']}>
       <div className={styles['search-chat']}>
-        <i className="fas fa-search">{''}</i>
+        <form>
+          <i className="fas fa-search">{''}</i>
+          <input
+            className={styles['search-message']}
+            type="text"
+            placeholder="Search message"
+          />
+        </form>
       </div>
       <div className={styles['contact-title']}>
         {userdata?.fullname}
         {userdata?.online && <div className={styles.online}> </div>}
       </div>
       <div className={styles['chat-settings']}>
-        <i className="fas fa-cog">{''}</i>
+        <button className={styles['settings-btn']}>
+          <i className="fas fa-cog">{''}</i>
+        </button>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@
   z-index: 11111111;
   top: 0.1px;
   font-size: 20px;
-  padding: 20px 10px;
+  padding: 23px 10px;
   border-bottom: 1px solid lightgray;
   background-color: white;
 }
@@ -15,14 +15,32 @@
   cursor: pointer;
 }
 
+.search-message {
+  border: none;
+  outline: none !important;
+  margin-left: 10px;
+}
+
 .contact-title {
   font-weight: bold;
   display: flex;
 }
 
 .chat-settings {
+  width: 200px;
+  text-align: right;
+}
+
+.settings-btn {
+  border: none;
   color: darkgray;
   cursor: pointer;
+  background-color: white;
+  font-size: 20px;
+}
+
+.settings-btn:hover {
+  color: #363d45;
 }
 
 .online {

@@ -3,17 +3,20 @@
   text-align: center;
   margin-bottom: 50px;
 }
+
 .nickname {
   color: #7a7b7b;
   margin-bottom: 10px;
   cursor: pointer;
 }
+
 .username {
   font-weight: 500;
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 20px;
 }
+
 .avatar {
   margin: auto;
   width: 75px;
@@ -25,10 +28,12 @@
   color: #fff;
   font-size: 35px;
 }
+
 .icon {
   margin-left: 25px;
   cursor: pointer;
 }
+
 .icons {
   margin-right: 25px;
 }
