@@ -10,18 +10,16 @@ function MessageButtons(props) {
         <i className="fas fa-paperclip">{''}</i>
       </div>
       <div>
-        {(
-          <div className={styles.voice}>
+        {(props.newMessage === '' ?
+          (<div className={styles.voice}>
             <i className="fas fa-microphone" />
-          </div>
-        ) && (
-          <ScrollIntoView selector="#footer" >
-            <div className={styles['send-message']} id={'scroll'}>
-              <button onClick={props.handleAddMessage}>
-                <i className="fas fa-paper-plane" />
-              </button>
-            </div>
-          </ScrollIntoView>
+          </div>)
+          :
+          (<div className={styles['send-message']}>
+            <button className={styles['btn-add']} onClick={props.handleAddMessage}>
+              <i className="fas fa-paper-plane" />
+            </button>
+          </div>)
         )}
       </div>
     </div>
