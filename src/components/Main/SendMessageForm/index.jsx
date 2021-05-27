@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addMessage, changeText } from '../../../redux/ducks/messages';
 
-function SendMessageForm(props) {
+function SendMessageForm() {
   const contactId = useParams().id;
 
   const profileId = useSelector((state) => state.application._id)
@@ -18,8 +18,12 @@ function SendMessageForm(props) {
   };
 
   const handleAddMessage = () => {
-    dispatch(addMessage(profileId, contactId, newMessage));
+    dispatch(addMessage(profileId, contactId, newMessage))
   };
+
+  const scrollingMessages = () => {
+    document.getElementById('footer').scrollIntoView({ behavior: 'smooth', block: 'end' });
+  }
 
   return (
     <div className={styles['message-form']}>
@@ -34,7 +38,7 @@ function SendMessageForm(props) {
             onChange={handleText}
           />
         </form>
-        <MessageButtons handleAddMessage={handleAddMessage} newMessage={newMessage} />
+        <MessageButtons scrollingMessages={scrollingMessages} handleAddMessage={handleAddMessage} newMessage={newMessage} />
       </div>
     </div>
   );

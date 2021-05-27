@@ -1,10 +1,9 @@
 import React from 'react';
 import Contact from './Contact';
 import { useSelector } from 'react-redux';
-import ScrollIntoView from 'react-scroll-into-view';
 import styles from './contacts.module.css';
 
-function Contacts(props) {
+function Contacts() {
   const filter = useSelector((state) => state.contacts.filter);
 
   const contacts = useSelector((state) => state.contacts.contacts.filter(
@@ -17,9 +16,7 @@ function Contacts(props) {
     <div className={styles.scroll}>
       {contacts.map(contact => {
         return(
-          <ScrollIntoView selector="#footer">
-              <Contact contact={contact} key={contact._id}/>
-          </ScrollIntoView>
+          <Contact contact={contact} key={contact._id} />
         )
       })}
     </div>
