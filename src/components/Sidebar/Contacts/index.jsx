@@ -3,8 +3,6 @@ import Contact from './Contact';
 import { useSelector } from 'react-redux';
 import ScrollIntoView from 'react-scroll-into-view';
 import styles from './contacts.module.css';
-import Contact from './Contact';
-
 
 function Contacts(props) {
   const filter = useSelector((state) => state.contacts.filter);
@@ -14,7 +12,6 @@ function Contacts(props) {
   ));
 
   // const loading =useSelector(state => state.contacts.loading)
-
 
   return (
     <div className={styles.scroll}>
