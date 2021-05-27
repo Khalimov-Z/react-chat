@@ -18,7 +18,7 @@ function Contacts(props) {
       {contacts.map(contact => {
         return(
           <ScrollIntoView selector="#footer">
-              <Contact contact={contact} key={contact.id}/>
+              <Contact contact={contact} key={contact._id}/>
           </ScrollIntoView>
         )
       })}
