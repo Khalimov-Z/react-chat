@@ -33,11 +33,11 @@ function Main (props) {
   }
   return (
     <div className={styles.main}>
-      <div className={styles['inner-main']}>
         <MessageHeader setIsShow={props.setIsShow} isShow={props.isShow}/>
+      <div className={styles['inner-main']}>
         <MessageContainer />
-        <SendMessageForm />
       </div>
+        <SendMessageForm />
     </div>
   );
 }
