@@ -25,7 +25,7 @@
   margin-left: 9px;
   color: #000000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  word-break:break-all ;
+  word-break: break-all;
 }
 
 .received-message:before {
@@ -44,4 +44,6 @@
 .message-data {
   font-size: 13px;
   text-align: right;
+  display: flex;
+  float: right;
 }

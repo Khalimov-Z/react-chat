@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './outer-sent-message.module.css';
+import DeleteMessageButton from '../DeleteMessageButton';
 
 function OuterSentMessage(props) {
   return (
@@ -12,7 +13,8 @@ function OuterSentMessage(props) {
           <span className={styles.data}>
             {new Date(props.message.time).toLocaleTimeString().slice(0, -3)}
           </span>
-          <i className="fas fa-check"> </i>
+          <i className="fas fa-check" />
+          <DeleteMessageButton message={props.message} />
         </div>
       </div>
     </div>
