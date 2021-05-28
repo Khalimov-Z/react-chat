@@ -6,6 +6,11 @@
     border: none;
 }
 
+.search-message:hover {
+    color: #3e444a;
+    transition: 0.5s;
+}
+
 .fa-search{
     position: relative;
     margin-left: 10px;

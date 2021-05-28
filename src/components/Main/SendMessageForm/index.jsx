@@ -27,7 +27,7 @@ function SendMessageForm(props) {
         <form>
           <input
             className={styles['message-text']}
-            size='100'
+            size='130'
             placeholder="Write a message"
             type="text"
             value={newMessage}
