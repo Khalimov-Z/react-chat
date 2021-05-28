@@ -1,0 +1,14 @@
+.ellipsis {
+    width: 15px;
+    margin-left: 3px;
+}
+
+.btn-delete {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    font-size: 11px;
+    line-height: 11px;
+}
