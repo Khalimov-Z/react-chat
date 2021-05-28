@@ -3,7 +3,7 @@ import styles from './delete-message-button.module.css';
 import { useDispatch } from 'react-redux';
 import { deleteMessage } from '../../../../../redux/ducks/messages';
 
-function DeleteMessageButton (props) {
+function DeleteMessageButton(props) {
   const [iconDelete, setIconDelete] = useState(false);
 
   const dispatch = useDispatch();
@@ -13,10 +13,7 @@ function DeleteMessageButton (props) {
   };
 
   return (
-    <div
-      className={styles.ellipsis}
-      onClick={() => setIconDelete(!iconDelete)}
-    >
+    <div className={styles.ellipsis} onClick={() => setIconDelete(!iconDelete)}>
       {iconDelete ? (
         <button
           className={styles['btn-delete']}

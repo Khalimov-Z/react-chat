@@ -4,9 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deleteWord, SetSearchWord } from '../../../../redux/ducks/messages';
 
 function SearchMessage(props) {
-  const dispatch = useDispatch();
-
   const searchWord = useSelector((state) => state.messages.searchWord);
+
+  const dispatch = useDispatch();
 
   const handleWord = (e) => {
     dispatch(SetSearchWord(e.target.value));

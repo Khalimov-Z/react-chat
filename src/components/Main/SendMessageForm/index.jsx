@@ -6,10 +6,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addMessage, changeText } from '../../../redux/ducks/messages';
 
 function SendMessageForm(props) {
-  const contactId = useParams().id;
-
-  const profileId = useSelector((state) => state.application._id)
+  const profileId = useSelector((state) => state.application._id);
   const newMessage = useSelector((state) => state.messages.newMessage);
+
+  const contactId = useParams().id;
 
   const dispatch = useDispatch();
 
@@ -27,14 +27,17 @@ function SendMessageForm(props) {
         <form>
           <input
             className={styles['message-text']}
-            size='130'
+            size="130"
             placeholder="Write a message"
             type="text"
             value={newMessage}
             onChange={handleText}
           />
         </form>
-        <MessageButtons handleAddMessage={handleAddMessage} newMessage={newMessage} />
+        <MessageButtons
+          handleAddMessage={handleAddMessage}
+          newMessage={newMessage}
+        />
       </div>
     </div>
   );
