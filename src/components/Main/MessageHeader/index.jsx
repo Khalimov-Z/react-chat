@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './message-header.module.css';
 import ChatSetting from './ChatSetting';
-import FullNameContact from './FullnameContact';
+import FullNameContact from './FullNameContact';
 import SearchMessage from './SearchMessage';
 
 function MessageHeader(props) {
