@@ -1,8 +1,13 @@
 .information-bar {
   background-color: #dedede;
   height: 100vh;
-  overflow: hidden;
   width: 360px;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+
+.animate {
+  width: 100%;
 }
 
 .inner-information-bar {

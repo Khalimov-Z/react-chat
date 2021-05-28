@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './message-header.module.css';
-import ChatSetting from './ChatSetting';
-import FullNameContact from './FullNameContact';
 import SearchMessage from './SearchMessage';
+import FullNameContact from './FullNameContact';
+import ChatSetting from './ChatSetting';
 
 function MessageHeader(props) {
 
@@ -10,7 +10,10 @@ function MessageHeader(props) {
     <div className={styles['message-header']}>
       <SearchMessage />
       <FullNameContact />
-      <ChatSetting setIsShow={props.setIsShow} isShow={props.isShow}/>
+      <ChatSetting
+        setShowProfile={props.setShowProfile}
+        showProfile={props.showProfile}
+      />
     </div>
   );
 }

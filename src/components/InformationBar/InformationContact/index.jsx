@@ -2,12 +2,14 @@ import React from 'react';
 import styles from './information-contact.module.css';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
+
 function InformationContact(props) {
   const paramsId = useParams().id;
 
   const userdata = useSelector((state) =>
     state.contacts.contacts.find((item) => item._id === paramsId),
   );
+
   return (
     <div className={styles['information-contact']}>
       <div className={styles.avatar}>{userdata?.fullname.charAt(0)}</div>
