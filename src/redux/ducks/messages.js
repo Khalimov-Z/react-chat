@@ -63,6 +63,13 @@ const SEARCH_WORD = 'search/word';
 const DELETE_WORD = 'delete/word';
 
 // тут санки
+export const changeText = (value) => {
+  return {
+    type: UPDATE_CONTENT,
+    payload: value,
+  };
+};
+
 export const receivingMessages = (id, myId) => {
   return (dispatch) => {
     dispatch({ type: MESSAGES_LOAD_START });
@@ -78,18 +85,13 @@ export const receivingMessages = (id, myId) => {
   };
 };
 
-export const changeText = (value) => {
-  return {
-    type: UPDATE_CONTENT,
-    payload: value,
-  };
-};
 export const SetSearchWord =(value) => {
   return{
     type: SEARCH_WORD,
     payload: value
   }
 };
+
 export const deleteWord=() => {
   return{
     type:DELETE_WORD,
