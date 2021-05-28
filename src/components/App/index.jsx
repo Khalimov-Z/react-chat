@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import InformationBar from '../InformationBar';
 import Sidebar from '../Sidebar';
 import Main from '../Main';
@@ -7,8 +7,11 @@ import { Switch, Route } from 'react-router-dom';
 import { loadProfile } from '../../redux/ducks/application';
 import { useDispatch } from 'react-redux';
 import { loadContacts } from '../../redux/ducks/contacts';
+import { CSSTransition } from 'react-transition-group';
 
 function App() {
+  const [showProfile, setShowProfile] = useState(false);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -21,8 +24,20 @@ function App() {
       <Switch>
         <Route path="/:id?">
           <Sidebar />
-          <Main />
-          <InformationBar />
+          <Main setShowProfile={setShowProfile} showProfile={showProfile} />
+          <CSSTransition
+            in={showProfile}
+            timeout={500}
+            unmountOnExit={true}
+            classNames={{
+              enterActive: styles['info-bar-enter-active'],
+              enter: styles['info-bar-enter'],
+              exitActive: styles['info-bar-exit-active'],
+              exit: styles['info-bar-exit'],
+            }}
+          >
+            <InformationBar />
+          </CSSTransition>
         </Route>
       </Switch>
     </div>

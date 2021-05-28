@@ -2,3 +2,13 @@
   padding-top: 20px;
   flex: 1;
 }
+
+.last-message {
+  text-align: center;
+  margin: auto;
+  background-color: #7a7b7b;
+  border-radius: 10px;
+  width: 250px;
+  color: white;
+  margin-bottom: 10px;
+}

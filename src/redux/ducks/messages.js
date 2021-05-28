@@ -1,6 +1,7 @@
 const initialState = {
   messages: [],
   newMessage: '',
+  searchWord: '',
   loading: true,
 };
 
@@ -36,6 +37,16 @@ export default function messages(state = initialState, action) {
         messages: [...state.messages, action.payload],
         newMessage: '',
       };
+    case SEARCH_WORD:
+      return {
+        ...state,
+        searchWord: action.payload
+      }
+    case DELETE_WORD:
+      return {
+      ...state,
+        searchWord: ""
+    }
 
     default:
       return state;
@@ -48,8 +59,17 @@ const MESSAGES_LOAD_SUCCESS = 'messages/load/success';
 const ADD_MESSAGE_START = 'add/message/start';
 const ADD_MESSAGE_SUCCESS = 'add/message/success';
 const UPDATE_CONTENT = 'update/content';
+const SEARCH_WORD = 'search/word';
+const DELETE_WORD = 'delete/word';
 
 // тут санки
+export const changeText = (value) => {
+  return {
+    type: UPDATE_CONTENT,
+    payload: value,
+  };
+};
+
 export const receivingMessages = (id, myId) => {
   return (dispatch) => {
     dispatch({ type: MESSAGES_LOAD_START });
@@ -65,11 +85,17 @@ export const receivingMessages = (id, myId) => {
   };
 };
 
-export const changeText = (e) => {
-  return {
-    type: UPDATE_CONTENT,
-    payload: e,
-  };
+export const SetSearchWord =(value) => {
+  return{
+    type: SEARCH_WORD,
+    payload: value
+  }
+};
+
+export const deleteWord=() => {
+  return{
+    type:DELETE_WORD,
+  }
 };
 
 export const addMessage = (myId, contactId, content) => {

@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { receivingMessages } from '../../redux/ducks/messages';
 
-function Main() {
+function Main(props) {
   const profileId = useSelector((state) => state.application._id);
   const loading = useSelector((state) => state.application.loading);
 
@@ -35,7 +35,10 @@ function Main() {
   return (
     <div className={styles.main}>
       <div className={styles['inner-main']}>
-        <MessageHeader />
+        <MessageHeader
+          setShowProfile={props.setShowProfile}
+          showProfile={props.showProfile}
+        />
         <MessageContainer />
         <SendMessageForm />
       </div>

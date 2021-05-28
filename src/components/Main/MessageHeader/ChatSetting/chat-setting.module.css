@@ -1,0 +1,9 @@
+.chat-settings {
+    color: darkgray;
+    cursor: pointer;
+}
+
+.chat-settings:hover {
+    color: #3e444a;
+    transition: 0.5s;
+}

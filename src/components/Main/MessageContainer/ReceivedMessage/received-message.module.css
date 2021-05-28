@@ -25,6 +25,7 @@
   margin-left: 9px;
   color: #000000;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  word-break:break-all ;
 }
 
 .received-message:before {

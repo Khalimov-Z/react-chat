@@ -1,6 +1,7 @@
 import React from 'react';
 import Contact from './Contact';
 import { useSelector } from 'react-redux';
+import ScrollIntoView from 'react-scroll-into-view';
 import styles from './contacts.module.css';
 
 function Contacts(props) {
@@ -10,10 +11,16 @@ function Contacts(props) {
     contact => contact.fullname.toLowerCase().indexOf(filter.toLowerCase()) !== -1
   ));
 
+  // const loading =useSelector(state => state.contacts.loading)
+
   return (
     <div className={styles.scroll}>
-      {contacts.map((contact) => {
-        return <Contact contact={contact} key={contact._id} />;
+      {contacts.map(contact => {
+        return(
+          <ScrollIntoView selector="#footer">
+              <Contact contact={contact} key={contact._id}/>
+          </ScrollIntoView>
+        )
       })}
     </div>
   );
