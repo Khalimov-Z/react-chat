@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './chat-setting.module.css';
-function ChatSetting (props) {
+
+function ChatSetting(props) {
   return (
-    <div>
-      <div className={styles['chat-settings']} onClick={() => props.setIsShow(!props.isShow)}>
-        <i className="fas fa-cog">{''}</i>
-      </div>
+    <div
+      className={styles['chat-settings']}
+      onClick={() => props.setShowProfile(!props.showProfile)}
+    >
+      <i className="fas fa-cog">{''}</i>
     </div>
   );
 }
