@@ -6,6 +6,7 @@ import SendMessageForm from './SendMessageForm';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { receivingMessages } from '../../redux/ducks/messages';
+import Spinner from './Spinner/Spinner';
 
 function Main (props) {
 
@@ -29,17 +30,20 @@ function Main (props) {
   }
 
   if (loading) {
-    return null;
-  }
-  return (
-    <div className={styles.main}>
+    return (
+      <Spinner />
+    )
+  } else {
+    return (
+      <div className={styles.main}>
         <MessageHeader setIsShow={props.setIsShow} isShow={props.isShow}/>
-      <div className={styles['inner-main']}>
-        <MessageContainer />
-      </div>
+        <div className={styles['inner-main']}>
+          <MessageContainer />
+        </div>
         <SendMessageForm />
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default Main;

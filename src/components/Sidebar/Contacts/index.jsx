@@ -10,17 +10,32 @@ function Contacts() {
     contact => contact.fullname.toLowerCase().indexOf(filter.toLowerCase()) !== -1
   ));
 
-  // const loading =useSelector(state => state.contacts.loading)
-
-  return (
-    <div className={styles.scroll}>
-      {contacts.map(contact => {
-        return(
-          <Contact contact={contact} key={contact._id} />
-        )
-      })}
-    </div>
-  );
+  const loading = useSelector(state => state.contacts.loading)
+  if (loading) {
+    return (
+      <div>
+        <Contact loading={true}/>
+        <Contact loading={true}/>
+        <Contact loading={true}/>
+        <Contact loading={true}/>
+        <Contact loading={true}/>
+        <Contact loading={true}/>
+        <Contact loading={true}/>
+        <Contact loading={true}/>
+        <Contact loading={true}/>
+      </div>
+    )
+  } else {
+    return (
+      <div className={styles.scroll}>
+        {contacts.map(contact => {
+          return(
+            <Contact contact={contact} key={contact._id} />
+          )
+        })}
+      </div>
+    );
+  }
 }
 
 export default Contacts;
