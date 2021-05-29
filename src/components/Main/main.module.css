@@ -9,8 +9,8 @@
   flex-direction: column;
   overflow-y: scroll;
   color: #363636;
-  height: 100vh;
   justify-content: space-between;
+  height: 86vh;
 }
 
 .inner-main::-webkit-scrollbar {

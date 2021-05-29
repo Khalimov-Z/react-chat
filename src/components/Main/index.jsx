@@ -35,7 +35,6 @@ function Main(props) {
   } else {
   return (
     <div className={styles.main}>
-      <div className={styles['inner-main']}>
         <MessageHeader
           setShowProfile={props.setShowProfile}
           showProfile={props.showProfile}
@@ -44,7 +43,6 @@ function Main(props) {
           <MessageContainer />
         </div>
         <SendMessageForm />
-      </div>
       </div>
   );
   }
