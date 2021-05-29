@@ -8,7 +8,10 @@ function OuterSentMessage(props) {
 
   return (
     <div className={styles['outer-sent-messages']}>
-      <div className={styles['sent-messages']}>
+      <div
+        className={styles['sent-messages']}
+        onClick={() => props.setIconDelete(!props.iconDelete)}
+      >
         <div className={styles['sent-messages-text']}>
           {props.message.content}
         </div>
@@ -21,7 +24,11 @@ function OuterSentMessage(props) {
           ) : (
             <i className="fas fa-check"> </i>
           )}
-          <DeleteMessageButton message={props.message} />
+          <DeleteMessageButton
+            message={props.message}
+            iconDelete={props.iconDelete}
+            setIconDelete={props.setIconDelete}
+          />
         </div>
       </div>
     </div>

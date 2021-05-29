@@ -5,11 +5,14 @@
 
 .btn-delete {
   cursor: pointer;
-  border: 1px solid #dedede;
+  border: none;
   outline: none;
   background-color: #3e444a;
   color: white;
   font-size: 13px;
-  padding: 3px;
-  margin-top: -15px;
+  line-height: 10px;
+}
+
+.btn-delete:hover {
+  color: lightgray;
 }

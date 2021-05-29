@@ -3,10 +3,10 @@ import styles from './main.module.css';
 import MessageHeader from './MessageHeader';
 import MessageContainer from './MessageContainer';
 import SendMessageForm from './SendMessageForm';
+import Spinner from './Spinner';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { receivingMessages } from '../../redux/ducks/messages';
-import Spinner from './Spinner';
 
 function Main(props) {
   const profileId = useSelector((state) => state.application._id);

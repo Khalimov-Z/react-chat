@@ -16,7 +16,10 @@ function ReceivedMessage(props) {
       <div className={styles['contact-avatar']}>
         {userdata?.fullname.charAt(0)}
       </div>
-      <div className={styles['received-message']}>
+      <div
+        className={styles['received-message']}
+        onClick={() => props.setIconDelete(!props.iconDelete)}
+      >
         <div className={styles['received-message-text']}>
           {props.message.content}
         </div>
@@ -24,7 +27,11 @@ function ReceivedMessage(props) {
           <div>
             {new Date(props.message.time).toLocaleTimeString().slice(0, -3)}
           </div>
-          <DeleteMessageButton message={props.message} />
+          <DeleteMessageButton
+            message={props.message}
+            iconDelete={props.iconDelete}
+            setIconDelete={props.setIconDelete}
+          />
         </div>
       </div>
     </div>
