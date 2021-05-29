@@ -31,25 +31,23 @@ function Main(props) {
   }
 
   if (loading) {
-    return <Spinner />
+    return <Spinner />;
   } else {
-  return (
-    <div className={styles.main}>
-      <div className={styles['inner-main']}>
-        <MessageHeader
-          setShowProfile={props.setShowProfile}
-          showProfile={props.showProfile}
-        />
+    return (
+      <div className={styles.main}>
         <div className={styles['inner-main']}>
-          <MessageContainer />
+          <MessageHeader
+            setShowProfile={props.setShowProfile}
+            showProfile={props.showProfile}
+          />
+          <div className={styles['inner-main']}>
+            <MessageContainer />
+          </div>
+          <SendMessageForm />
         </div>
-        <SendMessageForm />
       </div>
-      </div>
-  );
+    );
   }
-
-
 }
 
 export default Main;

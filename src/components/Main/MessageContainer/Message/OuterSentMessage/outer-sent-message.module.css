@@ -32,7 +32,7 @@
 
 .message-data {
   display: flex;
-  float: right;
+  float: left;
   font-size: 13px;
   text-align: right;
 }

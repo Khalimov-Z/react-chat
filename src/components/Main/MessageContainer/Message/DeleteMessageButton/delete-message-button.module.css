@@ -1,14 +1,15 @@
 .ellipsis {
-  width: 15px;
-  margin-left: 3px;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 .btn-delete {
   cursor: pointer;
-  border: none;
+  border: 1px solid #dedede;
   outline: none;
-  background-color: transparent;
-  color: black;
-  font-size: 11px;
-  line-height: 11px;
+  background-color: #3e444a;
+  color: white;
+  font-size: 13px;
+  padding: 3px;
+  margin-top: -15px;
 }

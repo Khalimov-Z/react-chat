@@ -18,7 +18,7 @@ function SendMessageForm(props) {
   };
 
   const handleAddMessage = () => {
-    dispatch(addMessage(profileId, contactId, newMessage))
+    dispatch(addMessage(profileId, contactId, newMessage));
   };
 
   return (

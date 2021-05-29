@@ -9,7 +9,6 @@ function ChatSetting(props) {
     >
       <i className="fas fa-cog" />
     </div>
-
   );
 }
 

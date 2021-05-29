@@ -19,7 +19,7 @@ function DeleteMessageButton(props) {
           className={styles['btn-delete']}
           onClick={() => handleDelete(props.message._id)}
         >
-          <i className="fas fa-trash" />
+          <i className="fas fa-trash"> Delete </i>
         </button>
       ) : (
         <div className={styles['ellipsis-btn']}>
