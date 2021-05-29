@@ -7,7 +7,7 @@ function ChatSetting(props) {
       className={styles['chat-settings']}
       onClick={() => props.setShowProfile(!props.showProfile)}
     >
-      <i className="fas fa-cog">{''}</i>
+      <i className="fas fa-cog" />
     </div>
 
   );

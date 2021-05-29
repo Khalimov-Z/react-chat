@@ -20,12 +20,6 @@ export default function messages(state = initialState, action) {
         loading: false,
       };
 
-    case UPDATE_CONTENT:
-      return {
-        ...state,
-        newMessage: action.payload,
-      };
-
     case ADD_MESSAGE_START:
       return {
         ...state,
@@ -37,16 +31,46 @@ export default function messages(state = initialState, action) {
         messages: [...state.messages, action.payload],
         newMessage: '',
       };
+
+    case DELETE_MESSAGE_START:
+      return {
+        ...state,
+        messages: state.messages.map((message) => {
+          if (message._id === action.payload) {
+            return {
+              ...message,
+              deleting: true,
+            };
+          }
+          return message;
+        }),
+      };
+
+    case DELETE_MESSAGE_SUCCESS:
+      return {
+        ...state,
+        messages: state.messages.filter(
+          (message) => message._id !== action.payload,
+        ),
+      };
+
+    case UPDATE_CONTENT:
+      return {
+        ...state,
+        newMessage: action.payload,
+      };
+
     case SEARCH_WORD:
       return {
         ...state,
-        searchWord: action.payload
-      }
+        searchWord: action.payload,
+      };
+
     case DELETE_WORD:
       return {
-      ...state,
-        searchWord: ""
-    }
+        ...state,
+        searchWord: '',
+      };
 
     default:
       return state;
@@ -61,12 +85,27 @@ const ADD_MESSAGE_SUCCESS = 'add/message/success';
 const UPDATE_CONTENT = 'update/content';
 const SEARCH_WORD = 'search/word';
 const DELETE_WORD = 'delete/word';
+const DELETE_MESSAGE_START = 'delete/message/start';
+const DELETE_MESSAGE_SUCCESS = 'delete/message/success';
 
 // тут санки
 export const changeText = (value) => {
   return {
     type: UPDATE_CONTENT,
     payload: value,
+  };
+};
+
+export const SetSearchWord = (value) => {
+  return {
+    type: SEARCH_WORD,
+    payload: value,
+  };
+};
+
+export const deleteWord = () => {
+  return {
+    type: DELETE_WORD,
   };
 };
 
@@ -83,19 +122,6 @@ export const receivingMessages = (id, myId) => {
         });
       });
   };
-};
-
-export const SetSearchWord =(value) => {
-  return{
-    type: SEARCH_WORD,
-    payload: value
-  }
-};
-
-export const deleteWord=() => {
-  return{
-    type:DELETE_WORD,
-  }
 };
 
 export const addMessage = (myId, contactId, content) => {
@@ -118,6 +144,23 @@ export const addMessage = (myId, contactId, content) => {
       .then((response) => response.json())
       .then((json) => {
         dispatch({ type: ADD_MESSAGE_SUCCESS, payload: json });
+      });
+  };
+};
+
+export const deleteMessage = (_id) => {
+  return function (dispatch) {
+    dispatch({ type: DELETE_MESSAGE_START, payload: _id });
+
+    fetch(`https://api.intocode.ru:8001/api/messages/${_id}`, {
+      method: 'DELETE',
+    })
+      .then((response) => response.json())
+      .then(() => {
+        dispatch({
+          type: DELETE_MESSAGE_SUCCESS,
+          payload: _id,
+        });
       });
   };
 };
