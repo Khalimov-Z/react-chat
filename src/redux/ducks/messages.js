@@ -81,7 +81,6 @@ export const receivingMessages = (id, myId) => {
           type: MESSAGES_LOAD_SUCCESS,
           payload: json,
         });
-        document.getElementById('footer').scrollIntoView({ block: 'end' });
       });
   };
 };
@@ -119,7 +118,6 @@ export const addMessage = (myId, contactId, content) => {
       .then((response) => response.json())
       .then((json) => {
         dispatch({ type: ADD_MESSAGE_SUCCESS, payload: json });
-        document.getElementById('footer').scrollIntoView({ behavior: 'smooth', block: 'end' });
       });
   };
 };

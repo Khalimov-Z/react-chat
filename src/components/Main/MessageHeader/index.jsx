@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './message-header.module.css';
 import SearchMessage from './SearchMessage';
-import FullNameContact from './FullNameContact';
 import ChatSetting from './ChatSetting';
+import FullNameContact from './FullNameContact';
 
 function MessageHeader(props) {
-
   return (
     <div className={styles['message-header']}>
       <SearchMessage />
@@ -19,4 +18,3 @@ function MessageHeader(props) {
 }
 
 export default MessageHeader;
-
