@@ -40,7 +40,7 @@
 
 .delete {
   margin-right: 15px;
-  background-color:  #363d45;
+  background-color: #363d45;
   color: #e6e6e6;
   border: none;
   cursor: pointer;
@@ -54,7 +54,7 @@
 
 .btn-none {
   margin-right: 15px;
-  background-color:  #363d45;
+  background-color: #363d45;
   color: #363d45;
   border: none;
   width: 30px;
