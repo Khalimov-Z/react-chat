@@ -32,8 +32,9 @@ function Main(props) {
   if (loading) {
     return <Spinner />
   } else {
-    return (
-      <div className={styles.main}>
+  return (
+    <div className={styles.main}>
+      <div className={styles['inner-main']}>
         <MessageHeader
           setShowProfile={props.setShowProfile}
           showProfile={props.showProfile}
@@ -43,8 +44,12 @@ function Main(props) {
         </div>
         <SendMessageForm />
       </div>
-    );
+      </div>
+    </div>
+  );
   }
+
+
 }
 
 export default Main;
