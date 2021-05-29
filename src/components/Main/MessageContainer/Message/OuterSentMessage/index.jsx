@@ -4,8 +4,7 @@ import DeleteMessageButton from '../DeleteMessageButton';
 import { useSelector } from 'react-redux';
 
 function OuterSentMessage(props) {
-  const sending = useSelector(state => state.messages.sending);
-
+  console.log(props.message.sending )
   return (
     <div className={styles['outer-sent-messages']}>
       <div className={styles['sent-messages']}>
@@ -16,7 +15,7 @@ function OuterSentMessage(props) {
           <span className={styles.data}>
             {new Date(props.message.time).toLocaleTimeString().slice(0, -3)}
           </span>
-          {sending ? <i className="far fa-clock"> </i> : <i className="fas fa-check"> </i>}
+          {props.message.sending ? <i className="far fa-clock"> </i> : <i className="fas fa-check"> </i>}
           <DeleteMessageButton message={props.message} />
         </div>
       </div>
