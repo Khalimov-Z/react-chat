@@ -11,18 +11,19 @@ function Contacts() {
   ));
 
   const loading = useSelector(state => state.contacts.loading)
+
   if (loading) {
     return (
       <div>
-        <Contact loading={true}/>
-        <Contact loading={true}/>
-        <Contact loading={true}/>
-        <Contact loading={true}/>
-        <Contact loading={true}/>
-        <Contact loading={true}/>
-        <Contact loading={true}/>
-        <Contact loading={true}/>
-        <Contact loading={true}/>
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
+        <Contact />
       </div>
     )
   } else {
