@@ -11,8 +11,9 @@ function Main(props) {
   const profileId = useSelector((state) => state.application._id);
   const loading = useSelector((state) => state.application.loading);
 
-  const contactId = useParams().id;
   const dispatch = useDispatch();
+
+  const contactId = useParams().id;
 
   useEffect(() => {
     if (contactId && !loading) {

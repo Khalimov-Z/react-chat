@@ -2,6 +2,7 @@
   display: grid;
   justify-content: end;
 }
+
 .sent-messages {
   background-color: #3e444a;
   color: white;
@@ -12,8 +13,9 @@
   padding: 15px 15px 10px;
   margin-right: 10px;
   margin-left: 300px;
-  word-break:break-all ;
+  word-break: break-all;
 }
+
 .sent-messages:before {
   content: '';
   border: 10px solid transparent;
@@ -22,17 +24,23 @@
   right: -20px;
   top: 17px;
 }
+
 .sent-messages-text {
   margin-right: 15px;
   margin-bottom: 10px;
 }
+
 .message-data {
+  display: flex;
+  float: right;
   font-size: 13px;
   text-align: right;
 }
+
 .data {
   margin-right: 5px;
 }
+
 a {
   text-decoration: none;
 }

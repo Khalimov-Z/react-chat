@@ -1,13 +1,13 @@
 .contact-title {
-    font-weight: bold;
-    display: flex;
-    margin-right: 220px;
+  font-weight: bold;
+  display: flex;
+  margin-right: 220px;
 }
 .online {
-    height: 8px;
-    width: 8px;
-    border-radius: 100%;
-    background-color: greenyellow;
-    align-self: center;
-    margin-left: 5px;
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  background-color: greenyellow;
+  align-self: center;
+  margin-left: 5px;
 }

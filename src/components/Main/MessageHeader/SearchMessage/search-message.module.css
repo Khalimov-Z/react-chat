@@ -1,35 +1,35 @@
 .search-message {
-    color: darkgray;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    border: none;
+  color: darkgray;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
 }
 
 .search-message:hover {
-    color: #3e444a;
-    transition: 0.5s;
+  color: #3e444a;
+  transition: 0.5s;
 }
 
-.fa-search{
-    position: relative;
-    margin-left: 10px;
+.fa-search {
+  position: relative;
+  margin-left: 10px;
 }
 
-.input-message{
-    border: none;
-    outline-color: lightgray;
-    font-size: 15px;
-    padding: 3px;
-    margin-left: 5px;
+.input-message {
+  border: none;
+  outline-color: lightgray;
+  font-size: 15px;
+  padding: 3px;
+  margin-left: 5px;
 }
 
-.close-word{
-    margin-left:5px;
-    color: #2b323a;
-    font-size: 18px;
+.close-word {
+  margin-left: 5px;
+  color: #2b323a;
+  font-size: 18px;
 }
 
 .close-word:hover {
-    color: #4f595f;
+  color: #4f595f;
 }
