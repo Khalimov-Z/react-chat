@@ -45,7 +45,6 @@ function Main(props) {
         <SendMessageForm />
       </div>
       </div>
-    </div>
   );
   }
 
