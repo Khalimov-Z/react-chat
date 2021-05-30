@@ -2,7 +2,8 @@ const initialState = {
   messages: [],
   newMessage: '',
   searchWord: '',
-  loading: true,
+  loading: false,
+
 };
 
 export default function messages(state = initialState, action) {
@@ -23,13 +24,28 @@ export default function messages(state = initialState, action) {
     case ADD_MESSAGE_START:
       return {
         ...state,
+        messages: [...state.messages,{
+          ...action.payload,
+          sending: true,
+        }]
       };
 
     case ADD_MESSAGE_SUCCESS:
+
       return {
         ...state,
-        messages: [...state.messages, action.payload],
         newMessage: '',
+        messages: state.messages.map((message) => {
+          if(message.tempId === action.payload.tempId)
+          {
+            return {
+              ...message,
+              sending:false,
+            }
+
+          }
+          return message
+        })
       };
 
     case DELETE_MESSAGE_START:
@@ -38,6 +54,7 @@ export default function messages(state = initialState, action) {
         messages: state.messages.map((message) => {
           if (message._id === action.payload) {
             return {
+              // ...action.payload.data
               ...message,
               deleting: true,
             };
@@ -120,13 +137,17 @@ export const receivingMessages = (id, myId) => {
           type: MESSAGES_LOAD_SUCCESS,
           payload: json,
         });
+        document.getElementById('footer').scrollIntoView({ block: 'end' });
       });
   };
 };
 
 export const addMessage = (myId, contactId, content) => {
   return (dispatch) => {
-    dispatch({ type: ADD_MESSAGE_START });
+    const tempId = Math.random();
+    const time = new Date();
+    dispatch({ type: ADD_MESSAGE_START,
+      payload:{myId:myId, tempId:tempId, contactId:contactId, content:content, type:"text",time:time } });
 
     fetch('https://api.intocode.ru:8001/api/messages', {
       method: 'POST',
@@ -134,6 +155,7 @@ export const addMessage = (myId, contactId, content) => {
         Accept: 'application/json',
         'Content-type': 'application/json',
       },
+
       body: JSON.stringify({
         myId,
         contactId,
@@ -142,8 +164,12 @@ export const addMessage = (myId, contactId, content) => {
       }),
     })
       .then((response) => response.json())
-      .then((json) => {
-        dispatch({ type: ADD_MESSAGE_SUCCESS, payload: json });
+      .then((data) => {
+        dispatch({ type: ADD_MESSAGE_SUCCESS, payload:{ tempId:tempId,data:data } });
+        document
+          .getElementById('footer')
+          .scrollIntoView({ behavior: 'smooth', block: 'end' });
+
       });
   };
 };
