@@ -33,7 +33,7 @@
 
 .message-data {
   display: flex;
-  float: left;
+  float: right;
   font-size: 13px;
   text-align: right;
 }
