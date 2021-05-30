@@ -45,6 +45,6 @@
 .message-data {
   font-size: 13px;
   display: flex;
-  float: left;
+  float: right;
   margin-top: 10px;
 }
