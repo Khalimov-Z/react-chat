@@ -1,6 +1,7 @@
 .received-messages {
   margin-bottom: 10px;
   display: flex;
+  min-height: 70px;
 }
 
 .contact-avatar {
