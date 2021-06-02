@@ -2,14 +2,16 @@
   display: flex;
   color: #2b323a;
 }
+
 .investments {
   cursor: pointer;
 }
+
 .voice {
   margin-left: 46.25px;
-  padding-top: 1px;
   cursor: pointer;
 }
+
 .send-message {
   margin-left: 30px;
 }

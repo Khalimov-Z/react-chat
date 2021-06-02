@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from './send-message-form.module.css';
-import MessageButtons from './MessageButtons';
-import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import { addMessage, changeText } from '../../../redux/ducks/messages';
+import MessageButtons from './MessageButtons';
 
 function SendMessageForm(props) {
   const profileId = useSelector((state) => state.application._id);
   const newMessage = useSelector((state) => state.messages.newMessage);
 
-  const contactId = useParams().id;
-
   const dispatch = useDispatch();
+
+  const contactId = useParams().id;
 
   const handleText = (e) => {
     dispatch(changeText(e.target.value));

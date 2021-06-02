@@ -1,6 +1,10 @@
 .chat-settings {
   color: darkgray;
   cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
 }
 
 .chat-settings:hover {

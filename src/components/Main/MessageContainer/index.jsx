@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './message-container.module.css';
 import { useSelector } from 'react-redux';
 import Message from './Message';
-
-function MessageContainer(props) {
+function MessageContainer() {
+  const loading = useSelector((state) => state.messages.loading);
   const presetText = useSelector((state) => state.messages.searchWord);
   const messages = useSelector((state) =>
     state.messages.messages.filter(
@@ -11,13 +11,9 @@ function MessageContainer(props) {
         message.content.toLowerCase().indexOf(presetText.toLowerCase()) !== -1,
     ),
   );
-
-  const loading = useSelector((state) => state.messages.loading);
-
   if (loading) {
     return null;
   }
-
   return (
     <div>
       <div className={styles['message-container']} id={'asd'}>
@@ -27,11 +23,10 @@ function MessageContainer(props) {
           </div>
         ))}
       </div>
-      <div className={styles['last-message']} id="footer"></div>
+      <div className={styles['last-message']} id="footer">
+        {''}
+      </div>
     </div>
   );
 }
-
 export default MessageContainer;
-//
-// <OuterSentMessage messages={messages} />
