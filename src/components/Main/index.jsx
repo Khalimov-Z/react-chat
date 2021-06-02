@@ -31,7 +31,7 @@ function Main(props) {
   }
 
   if (loading) {
-    return <Spinner />
+    return <Spinner />;
   } else {
     return (
       <div className={styles.main}>
@@ -46,8 +46,6 @@ function Main(props) {
       </div>
     );
   }
-
-
 }
 
 export default Main;
