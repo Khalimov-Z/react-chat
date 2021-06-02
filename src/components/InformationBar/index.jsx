@@ -3,8 +3,10 @@ import styles from './information-bar.module.css';
 import InformationContact from './InformationContact';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import SocialContact from './SocialContact';
+import MediaContact from './MediaContact';
 
-function InformationBar(props) {
+function InformationBar() {
   const paramsId = useParams().id;
 
   const userdata = useSelector((state) =>
@@ -52,6 +54,12 @@ function InformationBar(props) {
               <span className={styles.text}>{'filename.pdf'}</span>
             </div>
           </div>
+          <InformationContact
+            userName={userdata?.username}
+            fullName={userdata?.fullname}
+          />
+          <SocialContact socials={userdata?.socials} />
+          <MediaContact file={"filename.pdf"} />
         </div>
       </div>
     </div>

@@ -11,8 +11,16 @@ function MessageContainer(props) {
         message.content.toLowerCase().indexOf(presetText.toLowerCase()) !== -1,
     ),
   );
-
+  
+function MessageContainer() {
   const loading = useSelector((state) => state.messages.loading);
+  const presetText = useSelector((state) => state.messages.searchWord);
+  const messages = useSelector((state) =>
+    state.messages.messages.filter(
+      (message) =>
+        message.content.toLowerCase().indexOf(presetText.toLowerCase()) !== -1,
+    ),
+  );
 
   if (loading) {
     return null;
@@ -28,10 +36,11 @@ function MessageContainer(props) {
         ))}
       </div>
       <div className={styles['last-message']} id="footer"></div>
+      <div className={styles['last-message']} id="footer">
+        {''}
+      </div>
     </div>
   );
 }
 
 export default MessageContainer;
-//
-// <OuterSentMessage messages={messages} />
