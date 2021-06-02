@@ -13,12 +13,14 @@
   box-shadow: 0 -0.1px 5px rgba(194, 191, 191, 0.226);
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .instagram,
 .twitter,
 .facebook {
   cursor: pointer;
+
 }
 
 .instagram,
@@ -31,4 +33,8 @@
 }
 .user-facebook {
   margin-left: 15px;
+  margin-bottom: 20px;
 }
+
+
+

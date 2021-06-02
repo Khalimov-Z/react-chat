@@ -26,6 +26,7 @@ function OuterSentMessage({ message, iconDelete, setIconDelete }) {
     </div>
   );
 }
+
 OuterSentMessage.propTypes = {
   message: PropTypes.object,
   iconDelete: PropTypes.bool,

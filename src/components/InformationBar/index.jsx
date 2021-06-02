@@ -8,11 +8,9 @@ import MediaContact from './MediaContact';
 
 function InformationBar() {
   const paramsId = useParams().id;
-
   const userdata = useSelector((state) =>
     state.contacts.contacts.find((item) => item._id === paramsId),
   );
-
   return (
     <div className={styles['information-bar']}>
       <div className={styles.animate}>
@@ -28,4 +26,6 @@ function InformationBar() {
     </div>
   );
 }
+
 export default InformationBar;
+

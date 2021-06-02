@@ -12,6 +12,7 @@ function ChatSetting({ showProfile, setShowProfile }) {
     </button>
   );
 }
+
 ChatSetting.propTypes = {
   showProfile: PropTypes.bool,
   setShowProfile: PropTypes.func,
