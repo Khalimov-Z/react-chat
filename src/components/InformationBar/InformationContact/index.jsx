@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './information-contact.module.css';
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-function InformationContact({userName,fullName}) {
+function InformationContact({ userName, fullName }) {
   return (
     <div className={styles['information-contact']}>
       <div className={styles.avatar}>{fullName.charAt(0)}</div>

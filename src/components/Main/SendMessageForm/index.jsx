@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { addMessage, changeText } from '../../../redux/ducks/messages';
 import MessageButtons from './MessageButtons';
 
-function SendMessageForm(props) {
+function SendMessageForm() {
   const profileId = useSelector((state) => state.application._id);
   const newMessage = useSelector((state) => state.messages.newMessage);
 

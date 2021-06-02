@@ -3,7 +3,7 @@
 }
 
 .contact {
-  padding: 15px 15px 15px 0;
+  padding: 15px;
   display: flex;
   cursor: pointer;
   position: relative;
@@ -19,7 +19,7 @@
   height: 50px;
   border-radius: 100%;
   background-color: #3e444a;
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 .online {
@@ -49,7 +49,7 @@
 }
 
 .user-head-title {
-  margin: auto 50px;
+  margin: auto 30px;
 }
 
 .user-title {

@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './media-contact.module.css';
 import PropTypes from 'prop-types';
 
-function MediaContact ({file}) {
+function MediaContact({ file }) {
+
   return (
     <div className={styles['media-block']}>
       <div className={styles.media}>Media</div>
@@ -14,10 +15,11 @@ function MediaContact ({file}) {
   );
 }
 MediaContact.propTypes = {
-  file:PropTypes.string.isRequired
+  file: PropTypes.string.isRequired,
 };
 
 MediaContact.defaultProps = {
-  file: "fileName",
+  file: 'fileName',
 };
 export default MediaContact;
+

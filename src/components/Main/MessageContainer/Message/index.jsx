@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import ReceivedMessage from './ReceivedMessage';
 import OuterSentMessage from './OuterSentMessage';
+import PropTypes from 'prop-types';
 
-function Message(props) {
+function Message({ message }) {
   const [iconDelete, setIconDelete] = useState(false);
 
   const profileId = useSelector((state) => state.application._id);
 
-  if (profileId === props.message.toUserId) {
+  if (profileId === message.toUserId) {
     return (
       <ReceivedMessage
-        message={props.message}
+        message={message}
         iconDelete={iconDelete}
         setIconDelete={setIconDelete}
       />
@@ -19,12 +20,15 @@ function Message(props) {
   } else {
     return (
       <OuterSentMessage
-        message={props.message}
+        message={message}
         iconDelete={iconDelete}
         setIconDelete={setIconDelete}
       />
     );
   }
 }
+Message.propTypes = {
+  message: PropTypes.object,
+};
 
 export default Message;
