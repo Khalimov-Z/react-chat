@@ -1,0 +1,11 @@
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 11111111;
+  top: 0.1px;
+  font-size: 20px;
+  padding: 23px 10px;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+}

@@ -1,0 +1,22 @@
+.spinner-head {
+  display: flex;
+}
+.updating {
+  margin-left: 10px;
+}
+
+.spinner-contact {
+  animation-name: rotation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

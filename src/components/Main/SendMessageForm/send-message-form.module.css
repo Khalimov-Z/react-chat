@@ -1,0 +1,22 @@
+.message-form {
+  position: sticky;
+  z-index: 11111111;
+  bottom: 0.1px;
+}
+
+.inner-message-form {
+  padding: 20px 10px;
+  border-top: 1px solid lightgray;
+  background-color: white;
+  display: flex;
+  color: darkgray;
+  justify-content: space-between;
+}
+
+.message-text {
+  color: gray;
+  outline: none !important;
+  border: none;
+  font-size: 15px;
+  flex: 1;
+}

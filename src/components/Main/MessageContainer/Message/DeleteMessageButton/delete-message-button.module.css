@@ -1,0 +1,20 @@
+.ellipsis {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  cursor: pointer;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  background-color: #3e444a;
+  color: white;
+  font-size: 13px;
+  height: 25px;
+  z-index: 1;
+  margin-top: -5px;
+}
+
+.btn-delete:hover {
+  color: lightgray;
+}

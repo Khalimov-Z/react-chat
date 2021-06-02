@@ -1,0 +1,25 @@
+.app {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.info-bar-enter {
+  width: 0;
+}
+
+.info-bar-enter-active {
+  width: 360px;
+}
+
+.info-bar-exit {
+  width: 360px;
+}
+
+.info-bar-exit-active {
+  width: 0;
+}

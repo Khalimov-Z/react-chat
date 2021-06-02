@@ -1,61 +1,44 @@
-import React from 'react';
-import styles from './main.module.css'
-
-function Main () {
-  return (
-    <div className={styles.main}>
-      <div className={styles['main-contact']}>
-        <div className={styles['search-chat']}>
-          <i className="fas fa-search">{''}</i>
-        </div>
-        <div className={styles['contact-title']}>
-          Intocode
-        </div>
-        <div className={styles['chat-settings']}>
-          <i className="fas fa-cog">{''}</i>
-        </div>
+import React, { useEffect } from 'react';
+import styles from './main.module.css';
+import MessageHeader from './MessageHeader';
+import MessageContainer from './MessageContainer';
+import SendMessageForm from './SendMessageForm';
+import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import { receivingMessages } from '../../redux/ducks/messages';
+import Spinner from './Spinner';
+function Main(props) {
+  const profileId = useSelector((state) => state.application._id);
+  const loading = useSelector((state) => state.application.loading);
+  const dispatch = useDispatch();
+  const contactId = useParams().id;
+  useEffect(() => {
+    if (contactId && !loading) {
+      dispatch(receivingMessages(contactId, profileId));
+    }
+  }, [dispatch, contactId, loading, profileId]);
+  if (!contactId) {
+    return (
+      <div className={styles.preloader}>
+        <div>Please, select a chat to start messaging</div>
       </div>
-      <div className={styles['messages-block']}>
-        <div className={styles['received-messages']}>
-          <div className={styles['contact-avatar']}>
-            I
-          </div>
-          <div className={styles['received-message']}>
-            <div className={styles['received-message-text']}>
-              Hi!
-            </div>
-            <div className={styles['message-data']}>
-              12:47
-            </div>
-          </div>
+    );
+  }
+  if (loading) {
+    return <Spinner />;
+  } else {
+    return (
+      <div className={styles.main}>
+        <MessageHeader
+          setShowProfile={props.setShowProfile}
+          showProfile={props.showProfile}
+        />
+        <div className={styles['inner-main']}>
+          <MessageContainer />
         </div>
-        <div className={styles['sent-messages']}>
-          <div className={styles['sent-messages-text']}>
-            Hello!
-          </div>
-          <div className={styles['message-data']}>
-            13:09 ✔
-          </div>
-        </div>
+        <SendMessageForm />
       </div>
-      <div className={styles['message-form']}>
-        <div className={styles['message-text']}>
-          Write a message
-        </div>
-        <div className={styles['message-buttons']}>
-          <div className={styles['investments']}>
-            <i className="fas fa-paperclip">{''}</i>
-          </div>
-          <div className={styles.voice}>
-            <i className="fas fa-microphone">{''}</i>
-          </div>
-          <div className={styles['send-message']}>
-            <i className="fas fa-paper-plane">{''}</i>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+    );
+  }
 }
-
 export default Main;
