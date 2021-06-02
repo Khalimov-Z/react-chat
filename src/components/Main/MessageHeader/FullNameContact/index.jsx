@@ -7,11 +7,10 @@ import SpinnerContact from './SpinnerContact/SpinnerContact';
 function FullNameContact() {
   const paramsId = useParams().id;
 
+  const loading = useSelector((state) => state.messages.loading);
   const userdata = useSelector((state) =>
     state.contacts.contacts.find((contact) => contact._id === paramsId),
   );
-
-  const loading = useSelector((state) => state.messages.loading);
 
   return (
     <div className={styles['contact-title']}>

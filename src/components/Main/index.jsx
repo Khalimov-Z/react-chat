@@ -8,7 +8,7 @@ import { useParams } from 'react-router-dom';
 import { receivingMessages } from '../../redux/ducks/messages';
 import Spinner from './Spinner';
 
-function Main(props) {
+function Main({ showProfile, setShowProfile }) {
   const profileId = useSelector((state) => state.application._id);
   const loading = useSelector((state) => state.application.loading);
 
@@ -36,8 +36,8 @@ function Main(props) {
     return (
       <div className={styles.main}>
         <MessageHeader
-          setShowProfile={props.setShowProfile}
-          showProfile={props.showProfile}
+          setShowProfile={setShowProfile}
+          showProfile={showProfile}
         />
         <div className={styles['inner-main']}>
           <MessageContainer />

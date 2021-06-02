@@ -3,8 +3,9 @@ import styles from './received-message.module.css';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import DeleteMessageButton from '../DeleteMessageButton';
+import PropTypes from 'prop-types';
 
-function ReceivedMessage(props) {
+function ReceivedMessage({ message, iconDelete, setIconDelete }) {
   const paramsId = useParams().id;
 
   const userdata = useSelector((state) =>
@@ -18,24 +19,21 @@ function ReceivedMessage(props) {
       </div>
       <div
         className={styles['received-message']}
-        onClick={() => props.setIconDelete(!props.iconDelete)}
+        onClick={() => setIconDelete(!iconDelete)}
       >
-        <div className={styles['received-message-text']}>
-          {props.message.content}
-        </div>
+        <div className={styles['received-message-text']}>{message.content}</div>
         <div className={styles['message-data']}>
-          <div>
-            {new Date(props.message.time).toLocaleTimeString().slice(0, -3)}
-          </div>
-          <DeleteMessageButton
-            message={props.message}
-            iconDelete={props.iconDelete}
-            setIconDelete={props.setIconDelete}
-          />
+          <div>{new Date(message.time).toLocaleTimeString().slice(0, -3)}</div>
+          <DeleteMessageButton message={message} iconDelete={iconDelete} />
         </div>
       </div>
     </div>
   );
 }
+ReceivedMessage.propTypes = {
+  message: PropTypes.object,
+  iconDelete: PropTypes.bool,
+  setIconDelete: PropTypes.func,
+};
 
 export default ReceivedMessage;

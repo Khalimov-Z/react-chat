@@ -1,35 +1,35 @@
 import React from 'react';
 import styles from './outer-sent-message.module.css';
 import DeleteMessageButton from '../DeleteMessageButton';
+import PropTypes from 'prop-types';
 
-function OuterSentMessage(props) {
+function OuterSentMessage({ message, iconDelete, setIconDelete }) {
   return (
     <div className={styles['outer-sent-messages']}>
       <div
         className={styles['sent-messages']}
-        onClick={() => props.setIconDelete(!props.iconDelete)}
+        onClick={() => setIconDelete(!iconDelete)}
       >
-        <div className={styles['sent-messages-text']}>
-          {props.message.content}
-        </div>
+        <div className={styles['sent-messages-text']}>{message.content}</div>
         <div className={styles['message-data']}>
           <span className={styles.data}>
-            {new Date(props.message.time).toLocaleTimeString().slice(0, -3)}
+            {new Date(message.time).toLocaleTimeString().slice(0, -3)}
           </span>
-          {props.message.sending ? (
+          {message.sending ? (
             <i className="far fa-clock"> </i>
           ) : (
             <i className="fas fa-check"> </i>
           )}
-          <DeleteMessageButton
-            message={props.message}
-            iconDelete={props.iconDelete}
-            setIconDelete={props.setIconDelete}
-          />
+          <DeleteMessageButton message={message} iconDelete={iconDelete} />
         </div>
       </div>
     </div>
   );
 }
+OuterSentMessage.propTypes = {
+  message: PropTypes.object,
+  iconDelete: PropTypes.bool,
+  setIconDelete: PropTypes.func,
+};
 
 export default OuterSentMessage;

@@ -3,7 +3,6 @@ const initialState = {
   newMessage: '',
   searchWord: '',
   loading: false,
-
 };
 
 export default function messages(state = initialState, action) {
