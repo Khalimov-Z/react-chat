@@ -7,9 +7,7 @@ function SpinnerContact() {
       <div className={styles['spinner-contact']}>
         <i className="fas fa-sync"> </i>
       </div>
-      <div className={styles.updating}>
-        Updating...
-      </div>
+      <div className={styles.updating}>Updating...</div>
     </div>
   );
 }

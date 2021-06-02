@@ -12,7 +12,7 @@ function InformationBar(props) {
   );
 
   return (
-    <div className={styles['information-bar']} >
+    <div className={styles['information-bar']}>
       <div className={styles.animate}>
         <div className={styles['inner-information-bar']}>
           <InformationContact />
@@ -23,22 +23,24 @@ function InformationBar(props) {
                 <div className={styles.instagram}>
                   <i className="ico fab fa-instagram" />
                   <span className={styles.user}>
-                  {userdata.socials.instagram}
-                </span>
+                    {userdata.socials.instagram}
+                  </span>
                 </div>
               )}
               {userdata?.socials?.twitter && (
                 <div className={styles.twitter}>
                   <i className="ico fab fa-twitter" />
-                  <span className={styles.user}>{userdata.socials.twitter}</span>
+                  <span className={styles.user}>
+                    {userdata.socials.twitter}
+                  </span>
                 </div>
               )}
               {userdata?.socials?.facebook && (
                 <div className={styles.facebook}>
                   <i className="ico fab fa-facebook-f" />
                   <span className={styles['user-facebook']}>
-                  {userdata.socials.facebook}
-                </span>
+                    {userdata.socials.facebook}
+                  </span>
                 </div>
               )}
             </div>
@@ -53,7 +55,7 @@ function InformationBar(props) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default InformationBar;
