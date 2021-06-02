@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './chat-setting.module.css';
-
 function ChatSetting(props) {
   return (
     <button
@@ -11,5 +10,4 @@ function ChatSetting(props) {
     </button>
   );
 }
-
 export default ChatSetting;

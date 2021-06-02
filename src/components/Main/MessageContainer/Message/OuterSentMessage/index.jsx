@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './outer-sent-message.module.css';
 import DeleteMessageButton from '../DeleteMessageButton';
-
 function OuterSentMessage(props) {
   return (
     <div className={styles['outer-sent-messages']}>
@@ -31,5 +30,4 @@ function OuterSentMessage(props) {
     </div>
   );
 }
-
 export default OuterSentMessage;
