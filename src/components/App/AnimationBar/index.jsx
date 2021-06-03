@@ -1,11 +1,10 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
-import styles from '../app.module.css';
+import styles from './animation-bar.module.css'
 import InformationBar from '../../InformationBar';
 
 function AnimationBar ({showProfile}) {
   return (
-    <div>
       <CSSTransition
         in={showProfile}
         timeout={500}
@@ -17,9 +16,12 @@ function AnimationBar ({showProfile}) {
           exit: styles['info-bar-exit'],
         }}
       >
-        <InformationBar />
+        <div className={styles['animate-bar']}>
+          <div className={styles.animate}>
+            <InformationBar />
+          </div>
+        </div>
       </CSSTransition>
-    </div>
   );
 }
 
