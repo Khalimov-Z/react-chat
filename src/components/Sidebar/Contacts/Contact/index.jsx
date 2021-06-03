@@ -1,15 +1,27 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './contact.module.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectContact } from '../../../../redux/ducks/contacts';
 
 function Contact(props) {
+  const selectedContactId = useSelector(state => state.contacts.selectedContactId);
+
+  const dispatch =useDispatch();
+
+  const handleSelectContact = () => {
+    dispatch(selectContact(props.contact?._id))
+  }
+
   return (
-    <div className={styles.selected}>
+    <div>
       <NavLink
         to={`/${props.contact?._id}`}
         activeClassName={styles['contact-active']}
       >
-        <div className={styles.contact}>
+        <div className={`${styles.contact} ${selectedContactId === props.contact?._id ? styles.selected : false} `}
+             onClick={handleSelectContact}
+        >
           <div className={styles['contacts-container']}>
             <div className={styles['user-avatar']}>
               <div className={styles['user-image']}>
