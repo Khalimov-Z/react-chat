@@ -19,7 +19,13 @@ function SendMessageForm() {
 
   const handleAddMessage = () => {
     dispatch(addMessage(profileId, contactId, newMessage));
-  };
+  }
+
+  const handleKeyDown = event => {
+    if (event.code === "Enter"|| event.code === "NumpadEnter") {
+      handleAddMessage( event.preventDefault());
+    }
+  }
 
   return (
     <div className={styles['message-form']}>
@@ -32,6 +38,7 @@ function SendMessageForm() {
             type="text"
             value={newMessage}
             onChange={handleText}
+            onKeyDown={handleKeyDown}
           />
         </form>
         <MessageButtons
