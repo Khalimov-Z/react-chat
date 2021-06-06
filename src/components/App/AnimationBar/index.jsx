@@ -17,10 +17,8 @@ function AnimationBar ({showProfile}) {
         }}
       >
         <div className={styles['animate-bar']}>
-          <div style={styles.dasd}>
-            <div className={styles.animate}>
-              <InformationBar />
-            </div>
+          <div className={styles.animate}>
+            <InformationBar />
           </div>
       </div>
       </CSSTransition>
