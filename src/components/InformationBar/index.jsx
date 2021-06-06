@@ -13,14 +13,12 @@ function InformationBar() {
   );
   return (
     <div className={styles['information-bar']}>
-        <div className={styles['inner-information-bar']}>
-          <InformationContact
-            userName={userdata?.username}
-            fullName={userdata?.fullname}
-          />
-          <SocialContact socials={userdata?.socials} />
-          <MediaContact file={'filename.pdf'} />
-      </div>
+        <InformationContact
+          userName={userdata?.username}
+          fullName={userdata?.fullname}
+        />
+        <SocialContact socials={userdata?.socials} />
+        <MediaContact file={'filename.pdf'} />
     </div>
   );
 }

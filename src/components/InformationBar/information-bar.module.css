@@ -1,14 +1,6 @@
 .information-bar {
   background-color: #dedede;
   height: 100vh;
-  width: 360px;
-  overflow: hidden;
-}
-
-
-.inner-information-bar {
-  width: 280px;
-  margin: 0 auto;
-  margin-top: 50px;
+  padding-top: 20%;
 }
 
