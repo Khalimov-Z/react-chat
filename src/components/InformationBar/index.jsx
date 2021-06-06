@@ -8,24 +8,21 @@ import MediaContact from './MediaContact';
 
 function InformationBar() {
   const paramsId = useParams().id;
-
   const userdata = useSelector((state) =>
     state.contacts.contacts.find((item) => item._id === paramsId),
   );
-
   return (
     <div className={styles['information-bar']}>
-      <div className={styles.animate}>
-        <div className={styles['inner-information-bar']}>
-          <InformationContact
-            userName={userdata?.username}
-            fullName={userdata?.fullname}
-          />
-          <SocialContact socials={userdata?.socials} />
-          <MediaContact file={'filename.pdf'} />
-        </div>
+      <div className={styles['inner-information-bar']}>
+        <InformationContact
+          userName={userdata?.username}
+          fullName={userdata?.fullname}
+        />
+        <SocialContact socials={userdata?.socials} />
+        <MediaContact file={'filename.pdf'} />
       </div>
     </div>
   );
 }
+
 export default InformationBar;
