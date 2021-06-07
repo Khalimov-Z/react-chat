@@ -1,7 +1,7 @@
 .contact-title {
   font-weight: bold;
   display: flex;
-  margin-right: 220px;
+  justify-content:center ;
 }
 
 .online {

@@ -1,7 +1,7 @@
 .animate-bar {
   overflow: hidden;
   transition: width 0.5s;
-  width: 17%;
+  width: 20%;
 }
 
 .animate {
@@ -13,11 +13,11 @@
 }
 
 .info-bar-enter-active {
-  width: 17%;
+  width: 20%;
 }
 
 .info-bar-exit {
-  width: 17%;
+  width: 20%;
 }
 
 .info-bar-exit-active {
