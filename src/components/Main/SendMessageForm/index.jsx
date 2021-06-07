@@ -33,7 +33,7 @@ function SendMessageForm() {
         <form>
           <input
             className={styles['message-text']}
-            size="130"
+            size="60"
             placeholder="Write a message"
             type="text"
             value={newMessage}

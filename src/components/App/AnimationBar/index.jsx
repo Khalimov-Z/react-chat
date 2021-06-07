@@ -20,7 +20,7 @@ function AnimationBar ({showProfile}) {
           <div className={styles.animate}>
             <InformationBar />
           </div>
-        </div>
+      </div>
       </CSSTransition>
   );
 }

@@ -3,11 +3,11 @@
 }
 
 .info-bar-enter-active {
-    width: 360px;
+    width: 17%;
 }
 
 .info-bar-exit {
-    width: 360px;
+    width: 17%;
 }
 
 .info-bar-exit-active {
@@ -15,11 +15,11 @@
 }
 
 .animate {
-    width: 100%;
+
 }
 
 .animate-bar{
-    overflow: hidden;
+    overflow: auto;
     transition: width 0.5s;
+    width: 17%;
 }
-

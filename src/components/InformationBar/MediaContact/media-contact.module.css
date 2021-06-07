@@ -1,5 +1,6 @@
-.media {
-  margin-bottom: 20px;
+.media-block {
+  width: 80%;
+  margin: auto;
 }
 
 .media-rod {
