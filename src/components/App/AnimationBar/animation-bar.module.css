@@ -1,25 +1,25 @@
-.info-bar-enter {
-    width: 0;
-}
-
-.info-bar-enter-active {
-    width: 360px;
-}
-
-.info-bar-exit {
-    width: 360px;
-}
-
-.info-bar-exit-active {
-    width: 0;
+.animate-bar{
+    overflow: hidden;
+    transition: width 0.5s;
+    width: 17%;
 }
 
 .animate {
     width: 100%;
 }
 
-.animate-bar{
-    overflow: hidden;
-    transition: width 0.5s;
+.info-bar-enter {
+    width: 0;
 }
 
+.info-bar-enter-active {
+    width: 17%;
+}
+
+.info-bar-exit {
+    width: 17%;
+}
+
+.info-bar-exit-active {
+    width: 0;
+}
