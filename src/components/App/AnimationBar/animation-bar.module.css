@@ -1,25 +1,25 @@
-.animate-bar{
-    overflow: hidden;
-    transition: width 0.5s;
-    width: 17%;
+.animate-bar {
+  overflow: hidden;
+  transition: width 0.5s;
+  width: 17%;
 }
 
 .animate {
-    width: 100%;
+  width: 100%;
 }
 
 .info-bar-enter {
-    width: 0;
+  width: 0;
 }
 
 .info-bar-enter-active {
-    width: 17%;
+  width: 17%;
 }
 
 .info-bar-exit {
-    width: 17%;
+  width: 17%;
 }
 
 .info-bar-exit-active {
-    width: 0;
+  width: 0;
 }

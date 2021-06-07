@@ -5,13 +5,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { selectContact } from '../../../../redux/ducks/contacts';
 
 function Contact(props) {
-  const selectedContactId = useSelector(state => state.contacts.selectedContactId);
+  const selectedContactId = useSelector(
+    (state) => state.contacts.selectedContactId,
+  );
 
-  const dispatch =useDispatch();
+  const dispatch = useDispatch();
 
   const handleSelectContact = () => {
-    dispatch(selectContact(props.contact?._id))
-  }
+    dispatch(selectContact(props.contact?._id));
+  };
 
   return (
     <div>
@@ -19,8 +21,11 @@ function Contact(props) {
         to={`/${props.contact?._id}`}
         activeClassName={styles['contact-active']}
       >
-        <div className={`${styles.contact} ${selectedContactId === props.contact?._id ? styles.selected : false} `}
-             onClick={handleSelectContact}
+        <div
+          className={`${styles.contact} ${
+            selectedContactId === props.contact?._id ? styles.selected : false
+          } `}
+          onClick={handleSelectContact}
         >
           <div className={styles['contacts-container']}>
             <div className={styles['user-avatar']}>
