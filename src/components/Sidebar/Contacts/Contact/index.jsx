@@ -27,7 +27,6 @@ function Contact(props) {
           } `}
           onClick={handleSelectContact}
         >
-          <div className={styles['contacts-container']}>
             <div className={styles['user-avatar']}>
               <div className={styles['user-image']}>
                 <div
@@ -52,7 +51,6 @@ function Contact(props) {
                 </div>
               </div>
             </div>
-          </div>
           <div className={styles['user-menu']}>
             <div className={styles['user-more']}>
               <i className="fas fa-ellipsis-h"> </i>
