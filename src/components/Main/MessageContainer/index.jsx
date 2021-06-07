@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './message-container.module.css';
 import { useSelector } from 'react-redux';
 import Message from './Message';
+
 function MessageContainer() {
   const loading = useSelector((state) => state.messages.loading);
   const presetText = useSelector((state) => state.messages.searchWord);
@@ -11,9 +12,11 @@ function MessageContainer() {
         message.content.toLowerCase().indexOf(presetText.toLowerCase()) !== -1,
     ),
   );
+
   if (loading) {
     return null;
   }
+
   return (
     <div>
       <div className={styles['message-container']} id={'asd'}>
@@ -29,4 +32,5 @@ function MessageContainer() {
     </div>
   );
 }
+
 export default MessageContainer;
