@@ -20,7 +20,7 @@
 
 + Выпадающее окно с данными о контакте.
 + Поиск сообщения.
-  ![gif](https://github.com/Khalimov-Z/react-chat/blob/Kassumov_Zubayra/gif2.gif)
+  ![gif](https://github.com/Khalimov-Z/react-chat/blob/Kassumov_Zubayra/gif3.gif)
 
 
 + При вводе сообщения иконка микрофона меняется на иконку отправки.
