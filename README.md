@@ -1,14 +1,13 @@
 # Десктопный чат
 
 Это групповой проект, выполненный студентами школы программирования <a href="https://intocode.ru/" target="_blank">Intocode</a>
-***
 
 ### Демо версия - <a href="https://intense-island-55096.herokuapp.com/" target="_blank">открыть!</a>
+* * *
 
-***
 
-## Функционал сайта
 
+ Функционал сайта
 #### Просмотр контактов.
 #### Поиск контактов по названию.
   ![gif](https://github.com/Khalimov-Z/react-chat/blob/Kassumov_Zubayra/gif1.gif)
