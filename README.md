@@ -9,7 +9,6 @@
 
 ## Функционал сайта
 
-***
 #### Просмотр контактов.
 #### Поиск контактов по названию.
   ![gif](https://github.com/Khalimov-Z/react-chat/blob/Kassumov_Zubayra/gif1.gif)
