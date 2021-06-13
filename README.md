@@ -15,6 +15,7 @@
 
 + Умнаю отправка сообщения.
 + Удаление сообщений.
+  ![gif](https://github.com/Khalimov-Z/react-chat/blob/Kassumov_Zubayra/gif2.gif)
 
 
 + Выпадающее окно с данными о контакте.
