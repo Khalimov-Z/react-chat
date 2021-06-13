@@ -6,16 +6,14 @@
 ##Функционал сайта
 + Просмотр контактов.
 + Поиск контактов по названию.
-  ![gif1](![gif](https://github.com/Khalimov-Z/react-chat/blob/main/Gif%201%20chat.gif))
+  ![gif1](![gif](https://github.com/Khalimov-Z/react-chat/blob/main/Gif%201.gif))
   
 
 + Умнаю отправка сообщения.
 + Удаление сообщений.
-  ![gif1](![gif](https://github.com/Khalimov-Z/react-chat/blob/main/Gif%202%20chat.gif))
 
 + Выпадающее окно с данными о контакте.
 + Поиск сообщения.
-  ![gif1](![gif](https://github.com/Khalimov-Z/react-chat/blob/main/Gif%203%20chta.gif))
 
 + При вводе сообщения иконка микрофона меняется на иконку отправки.
 + Автоматический скролинг к последнему сообщению.
