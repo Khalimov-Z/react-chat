@@ -55,3 +55,24 @@ npm start
   <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=for-the-badge&logo=Node.js&logoColor=white" />
   <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-yellow?style=for-the-badge&logo=JavaScript&logoColor=white" />
 </p>
+
+*** 
+## Команда проекта
+
+<h3>
+  <a href="https://github.com/Khalimov-Z">
+    <img alt="Khalimov" src="https://img.shields.io/badge/-Zubayra_Khalimov-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+
+<h3>
+  <a href="https://github.com/KasumovW">
+    <img alt="Kasumov" src="https://img.shields.io/badge/-Zubayra_Kasumov-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
+
+<h3>
+  <a href="https://github.com/Kharsaeva">
+    <img alt="Kharsaeva" src="https://img.shields.io/badge/-Aisha_Kharsaeva-black?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</h3>
