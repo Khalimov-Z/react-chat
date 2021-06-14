@@ -1,6 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
 .contacts {
-  width: 20%;
+  width: 23%;
   background-color: #2b323a;
   height: 100vh;
-  min-width: 300px;
 }
