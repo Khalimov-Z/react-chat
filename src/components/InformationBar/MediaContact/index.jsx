@@ -3,7 +3,6 @@ import styles from './media-contact.module.css';
 import PropTypes from 'prop-types';
 
 function MediaContact({ file }) {
-
   return (
     <div className={styles['media-block']}>
       <div className={styles.media}>Media</div>
@@ -22,4 +21,3 @@ MediaContact.defaultProps = {
   file: 'fileName',
 };
 export default MediaContact;
-

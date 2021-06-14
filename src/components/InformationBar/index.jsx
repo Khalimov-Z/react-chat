@@ -24,4 +24,3 @@ function InformationBar() {
 }
 
 export default InformationBar;
-

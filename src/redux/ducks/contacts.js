@@ -22,8 +22,8 @@ export default function contacts(state = initialState, action) {
     case CONTACTS_SELECT:
       return {
         ...state,
-        selectedContactId: action.payload
-      }
+        selectedContactId: action.payload,
+      };
 
     case FILTER_SET:
       return {
@@ -46,7 +46,7 @@ const CONTACTS_LOAD_START = 'contacts/load/start';
 const CONTACTS_LOAD_SUCCESS = 'contacts/load/success';
 const FILTER_SET = 'filter/set';
 const REMOVE_SEARCH_TEXT = 'remove/search/text/';
-const CONTACTS_SELECT = 'contacts/select'
+const CONTACTS_SELECT = 'contacts/select';
 
 export const setFilterText = (text) => {
   return {
