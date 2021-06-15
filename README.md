@@ -36,7 +36,7 @@
 git clone https://github.com/Khalimov-Z/react-chat.git
 ```
 
-2. Указать путь к проекту:
+2. Перейти в папку с проектом:
 ```javascript
 cd react-chat
 ```
