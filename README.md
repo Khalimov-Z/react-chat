@@ -41,7 +41,7 @@ git clone https://github.com/Khalimov-Z/react-chat.git
 cd react-chat
 ```
 
-3. Затем устновить технологии проекта:
+3. Затем устоновить технологии проекта:
 ```javascript
 npm install
 ```
