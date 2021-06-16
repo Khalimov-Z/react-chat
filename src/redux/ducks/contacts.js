@@ -19,6 +19,7 @@ export default function contacts(state = initialState, action) {
         contacts: action.payload,
         loading: false,
       };
+
     case CONTACTS_SELECT:
       return {
         ...state,

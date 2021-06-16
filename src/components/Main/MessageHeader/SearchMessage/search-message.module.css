@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   border: none;
+  flex: 1 1;
 }
 
 .search-message:hover {

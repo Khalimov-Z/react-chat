@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import styles from './fullname-contact.module.css';
-import SpinnerContact from './SpinnerContact/SpinnerContact';
+import SpinnerContact from './SpinnerContact/index';
 
 function FullNameContact() {
   const paramsId = useParams().id;

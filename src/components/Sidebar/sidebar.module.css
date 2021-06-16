@@ -2,4 +2,5 @@
   width: 20%;
   background-color: #2b323a;
   height: 100vh;
+  min-width: 300px;
 }

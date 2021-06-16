@@ -93,7 +93,6 @@ export default function messages(state = initialState, action) {
   }
 }
 
-// тут экшн креэйторы
 const MESSAGES_LOAD_START = 'messages/load/start';
 const MESSAGES_LOAD_SUCCESS = 'messages/load/success';
 const ADD_MESSAGE_START = 'add/message/start';
@@ -104,7 +103,6 @@ const DELETE_WORD = 'delete/word';
 const DELETE_MESSAGE_START = 'delete/message/start';
 const DELETE_MESSAGE_SUCCESS = 'delete/message/success';
 
-// тут санки
 export const changeText = (value) => {
   return {
     type: UPDATE_CONTENT,
