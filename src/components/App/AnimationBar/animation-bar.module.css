@@ -1,7 +1,7 @@
 .animate-bar {
-    overflow: hidden;
-    transition: width 0.5s;
-    width: 20%;
+  overflow: hidden;
+  transition: width 0.5s;
+  width: 20%;
 }
 
 .animate {

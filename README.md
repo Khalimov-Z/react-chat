@@ -1,56 +1,55 @@
-# Десктопный чат
+# Веб-чат
 
 Это групповой проект, выполненный студентами школы программирования <a href="https://intocode.ru/" target="_blank">Intocode</a>
 
-### Демо версия - <a href="https://intense-island-55096.herokuapp.com/" target="_blank">открыть!</a>
-* * *
+### <a href="https://intense-island-55096.herokuapp.com/" target="_blank">Открыть чат</a>
 
-## Функционал сайта
+***
 
-#### 1. Просмотр полученных контактов с сервера и поиск нужного контакта
+## Функционал чата
+
+#### 1. Просмотр списка контактов с сервера, поиск контакта
 ![gif](https://github.com/Khalimov-Z/react-chat/blob/Kassumov_Zubayra/gif1.gif)
-***
-
-***
-#### 2. Умная отправка сообщения на сервер и удаление сообщения.
-  ![gif](https://github.com/Khalimov-Z/react-chat/blob/Kassumov_Zubayra/gif2.gif)
-***
-
-***
-#### 3. Выпадающее окно с данными о контакте, поиск сообщения.
-  ![gif](https://github.com/Khalimov-Z/react-chat/blob/Kassumov_Zubayra/gif3.gif)
-***
-
-А так-же более мелкие но не маловажные функции как:
-+ Анимация для появляющегося/закрывающегося инфобара с права.
-+ Автопрокрутка к последнему сообщению при отправке или открытие чата.
-+ Прелоадер для подгрузки бара с контактами, сообщений, переключение между контактами.
-+ И т.д.
 
 ***
 
-### Для запуска проекта вам необходимо : 
+#### 2. Отправка сообщений на сервер и удаление
+![gif](https://github.com/Khalimov-Z/react-chat/blob/Kassumov_Zubayra/gif2.gif)
 
-1. Клонировать проект на ваше устройство командой:
+***
+
+#### 3. Выезжающее окно с данными о контакте справа, поиск сообщения
+![gif](https://github.com/Khalimov-Z/react-chat/blob/Kassumov_Zubayra/gif3.gif)
+
+***
+
+А также:
++ Анимация открытия и закрытия инфобара справа.
++ Автопрокрутка к последнему сообщению при отправке или открытии чата.
++ Прелоадер для подгрузки списка контактов, сообщений, переключение между контактами.
+
+***
+
+### Для запуска проекта вам необходимо:
+
+1. Склонировать проект на ваше устройство:
+
 ```javascript
-git clone https://github.com/Khalimov-Z/react-chat.git
+git clone https://github.com/Khalimov-Z/react-chat
 ```
 
-2. Перейти в папку с проектом:
-```javascript
-cd react-chat
-```
-
-3. Затем устоновить зависимости проекта:
+2. Установить зависимости проекта:
 ```javascript
 npm install
 ```
 
-4. Запустить:
+3. Запустить:
 ```javascript
 npm start
 ```
-*** 
+
+***
+
 ## Технологии проекта
 
 <p>
@@ -62,14 +61,14 @@ npm start
   <img alt="Redux-Logger" src="https://img.shields.io/badge/-Redux_Logger-430098?style=for-the-badge&logo=Redux&logoColor=white" />
   <img alt="React-Router" src="https://img.shields.io/badge/-React_Router-black?style=for-the-badge&logo=react-router&logoColor=orange" />
   <img alt="Prettier" src="https://img.shields.io/badge/-Prettier-grey?style=for-the-badge&logo=Prettier&logoColor=orange" />
-  <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=for-the-badge&logo=Node.js&logoColor=white" />
+  <img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-yellow?style=for-the-badge&logo=JavaScript&logoColor=white" />
-    <img alt="Markdown" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"/>
-    <img src="https://img.shields.io/badge/-PropTypes-lightgrey?style=for-the-badge&logo=react&logoColor=white" />
+  <img alt="Markdown" src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"/>
+  <img alt="PropTypes" src="https://img.shields.io/badge/-PropTypes-lightgrey?style=for-the-badge&logo=react&logoColor=white" />
 </p>
 
-*** 
+***
+
 ## Команда проекта
 
 <h3>
