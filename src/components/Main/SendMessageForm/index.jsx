@@ -1,17 +1,17 @@
 import React from 'react';
 import styles from './send-message-form.module.css';
-import MessageButtons from './MessageButtons';
-import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import { addMessage, changeText } from '../../../redux/ducks/messages';
+import MessageButtons from './MessageButtons';
 
-function SendMessageForm(props) {
+function SendMessageForm() {
   const profileId = useSelector((state) => state.application._id);
   const newMessage = useSelector((state) => state.messages.newMessage);
 
-  const contactId = useParams().id;
-
   const dispatch = useDispatch();
+
+  const contactId = useParams().id;
 
   const handleText = (e) => {
     dispatch(changeText(e.target.value));
@@ -21,17 +21,24 @@ function SendMessageForm(props) {
     dispatch(addMessage(profileId, contactId, newMessage));
   };
 
+  const handleKeyDown = (event) => {
+    if (event.code === 'Enter' || event.code === 'NumpadEnter') {
+      handleAddMessage(event.preventDefault());
+    }
+  };
+
   return (
     <div className={styles['message-form']}>
       <div className={styles['inner-message-form']}>
         <form>
           <input
             className={styles['message-text']}
-            size="130"
+            size="60"
             placeholder="Write a message"
             type="text"
             value={newMessage}
             onChange={handleText}
+            onKeyDown={handleKeyDown}
           />
         </form>
         <MessageButtons

@@ -1,16 +1,14 @@
-.contacts-container {
-  display: flex;
-}
-
 .contact {
-  padding: 15px 15px 15px 0;
+  padding: 15px;
   display: flex;
   cursor: pointer;
   position: relative;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .selected {
-  /*background: #363d45;*/
+  background-color: #363d45;
 }
 
 .user-image {
@@ -18,7 +16,8 @@
   height: 50px;
   border-radius: 100%;
   background-color: #3e444a;
-  margin-left: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .online {
@@ -48,7 +47,7 @@
 }
 
 .user-head-title {
-  margin: auto 50px;
+  margin: auto;
 }
 
 .user-title {
@@ -65,6 +64,7 @@
   font-size: 16px;
   color: white;
   cursor: text;
+  width: 160px;
 }
 
 .user-check {
@@ -76,7 +76,8 @@
 }
 
 .user-menu {
-  margin: auto;
+  margin-right: 15px;
+  margin-top: 7px;
 }
 
 .user-more {

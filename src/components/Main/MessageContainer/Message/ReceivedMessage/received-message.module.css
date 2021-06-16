@@ -1,6 +1,7 @@
 .received-messages {
   margin-bottom: 10px;
   display: flex;
+  min-height: 75px;
 }
 
 .contact-avatar {
@@ -43,7 +44,7 @@
 
 .message-data {
   font-size: 13px;
-  text-align: right;
   display: flex;
   float: right;
+  margin-top: 10px;
 }

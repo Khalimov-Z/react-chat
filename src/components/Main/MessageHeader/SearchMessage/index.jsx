@@ -3,7 +3,7 @@ import styles from './search-message.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteWord, SetSearchWord } from '../../../../redux/ducks/messages';
 
-function SearchMessage(props) {
+function SearchMessage() {
   const searchWord = useSelector((state) => state.messages.searchWord);
 
   const dispatch = useDispatch();

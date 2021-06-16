@@ -1,17 +1,20 @@
 .message-buttons {
   display: flex;
   color: #2b323a;
+  font-size: 18px;
 }
+
 .investments {
   cursor: pointer;
 }
+
 .voice {
-  margin-left: 46.25px;
-  padding-top: 1px;
+  margin-left: 50.62px;
   cursor: pointer;
 }
+
 .send-message {
-  margin-left: 30px;
+  margin-left: 35px;
 }
 
 .btn-add {
@@ -19,6 +22,6 @@
   border: none;
   outline: none;
   background-color: white;
-  font-size: 18px;
+  font-size: 16px;
   color: #2b323a;
 }

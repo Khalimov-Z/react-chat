@@ -3,7 +3,7 @@ import styles from './message-container.module.css';
 import { useSelector } from 'react-redux';
 import Message from './Message';
 
-function MessageContainer(props) {
+function MessageContainer() {
   const loading = useSelector((state) => state.messages.loading);
   const presetText = useSelector((state) => state.messages.searchWord);
   const messages = useSelector((state) =>

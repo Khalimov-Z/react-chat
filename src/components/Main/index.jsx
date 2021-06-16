@@ -6,8 +6,9 @@ import SendMessageForm from './SendMessageForm';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { receivingMessages } from '../../redux/ducks/messages';
+import Spinner from './Spinner';
 
-function Main(props) {
+function Main({ showProfile, setShowProfile }) {
   const profileId = useSelector((state) => state.application._id);
   const loading = useSelector((state) => state.application.loading);
 
@@ -30,21 +31,21 @@ function Main(props) {
   }
 
   if (loading) {
-    return null;
-  }
-
-  return (
-    <div className={styles.main}>
-      <div className={styles['inner-main']}>
+    return <Spinner />;
+  } else {
+    return (
+      <div className={styles.main}>
         <MessageHeader
-          setShowProfile={props.setShowProfile}
-          showProfile={props.showProfile}
+          setShowProfile={setShowProfile}
+          showProfile={showProfile}
         />
-        <MessageContainer />
+        <div className={styles['inner-main']}>
+          <MessageContainer />
+        </div>
         <SendMessageForm />
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Main;
