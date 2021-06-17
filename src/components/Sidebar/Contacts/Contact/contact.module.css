@@ -56,8 +56,12 @@
 
 .user-last-message {
   font-size: 14px;
+  width: 160px;
   color: #86898d;
-  cursor: initial;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
 }
 
 .user-name {
