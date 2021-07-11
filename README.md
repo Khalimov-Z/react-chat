@@ -91,3 +91,21 @@ npm start
     <img alt="Kharsaeva" src="https://img.shields.io/badge/-Aisha_Kharsaeva-black?style=for-the-badge&logo=github&logoColor=white" />
   </a>
 </h3>
+
+-----
+
+### В мои обязанности входили:
+- составление архитектуры приложения;
+- добавление роутинга внутри проекта;
+- фильтр по сообщениям;
+- галочки для доставленных/прочитанных/отправляющихся сообщений;
+- профиль пользователя;
+- создание и контроль веток git.
+
+### При разработке чата использовал:
+- JavaScript / React (Hooks);
+- redux / redux-thunk / redux-logger для организации стейта;
+- react-transition-group для работы с анимацией;
+- react-router-dom для роутинга;
+- REST API, асинхронные запросы (специально для чата был написан небольшой backend);
+- classnames / Material Icons / prop-types ;
